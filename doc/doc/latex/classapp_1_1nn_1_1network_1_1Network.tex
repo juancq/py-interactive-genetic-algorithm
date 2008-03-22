@@ -1,0 +1,199 @@
+\section{app::nn::network::Network Class Reference}
+\label{classapp_1_1nn_1_1network_1_1Network}\index{app::nn::network::Network@{app::nn::network::Network}}
+Inheritance diagram for app::nn::network::Network:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classapp_1_1nn_1_1network_1_1Network__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf addNode}
+\item 
+def {\bf setInput}
+\item 
+def {\bf getOutput}
+\item 
+def {\bf onInput}
+\item 
+def {\bf addConnection}
+\item 
+def {\bf removeConnection}
+\item 
+def {\bf addThreshold}
+\item 
+def {\bf changeThreshold}
+\item 
+def {\bf changeWeight}
+\item 
+def {\bf addInput}
+\item 
+def {\bf addOutput}
+\item 
+def {\bf test}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf nodes}
+\item 
+{\bf connections}
+\item 
+{\bf index}
+\item 
+{\bf tnodes}
+\item 
+{\bf doprop}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file network.py.
+
+\subsection{Member Function Documentation}
+\index{app::nn::network::Network@{app::nn::network::Network}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::\_\-\_\-init\_\-\_\- ( {\em self})}\label{classapp_1_1nn_1_1network_1_1Network_4809fbba814fb86898acc40a62ea3c93}
+
+
+
+
+Definition at line 5 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!addNode@{addNode}}
+\index{addNode@{addNode}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::addNode ( {\em self},  {\em id} = {\tt None},  {\em threshold} = {\tt 1.0})}\label{classapp_1_1nn_1_1network_1_1Network_c6971bbc6288df70f2193df88394b4e7}
+
+
+
+
+Reimplemented in {\bf app::nn::layerednetwork::LayeredNetwork} \doxyref{}{p.}{classapp_1_1nn_1_1layerednetwork_1_1LayeredNetwork_b504249bd6549669c05541faf98e939f}.
+
+Definition at line 13 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!setInput@{setInput}}
+\index{setInput@{setInput}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::setInput ( {\em self},  {\em vals})}\label{classapp_1_1nn_1_1network_1_1Network_8c6116234db342bef78773fb6dfcd71b}
+
+
+
+
+Reimplemented in {\bf app::nn::layerednetwork::LayeredNetwork} \doxyref{}{p.}{classapp_1_1nn_1_1layerednetwork_1_1LayeredNetwork_5ffe0e355d35062390b3bb191253e289}.
+
+Definition at line 24 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::getOutput ( {\em self})}\label{classapp_1_1nn_1_1network_1_1Network_b7a556392337c43f6cd7106eda249512}
+
+
+
+
+Definition at line 35 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!onInput@{onInput}}
+\index{onInput@{onInput}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::onInput ( {\em self})}\label{classapp_1_1nn_1_1network_1_1Network_e3623f75098fd947f502c87131612c3e}
+
+
+
+
+Definition at line 41 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::addConnection ( {\em self},  {\em src},  {\em dest},  {\em weight} = {\tt 1.0})}\label{classapp_1_1nn_1_1network_1_1Network_02208aa83e733d7169211983c0ed37ff}
+
+
+
+
+Definition at line 44 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!removeConnection@{removeConnection}}
+\index{removeConnection@{removeConnection}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::removeConnection ( {\em self},  {\em src},  {\em dest})}\label{classapp_1_1nn_1_1network_1_1Network_e55e09335a8757677766d394cb8f5eac}
+
+
+
+
+Definition at line 52 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!addThreshold@{addThreshold}}
+\index{addThreshold@{addThreshold}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::addThreshold ( {\em self},  {\em destid},  {\em threshold})}\label{classapp_1_1nn_1_1network_1_1Network_01e58627a8b66b8dad0b2eedbe8297fb}
+
+
+
+
+Definition at line 59 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!changeThreshold@{changeThreshold}}
+\index{changeThreshold@{changeThreshold}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::changeThreshold ( {\em self},  {\em dest},  {\em threshold})}\label{classapp_1_1nn_1_1network_1_1Network_2884389aafcc0e2af9c02b232f4b5656}
+
+
+
+
+Definition at line 71 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!changeWeight@{changeWeight}}
+\index{changeWeight@{changeWeight}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::changeWeight ( {\em self},  {\em src},  {\em dest},  {\em weight})}\label{classapp_1_1nn_1_1network_1_1Network_26c4831f435f2418073acce79e54b7e7}
+
+
+
+
+Definition at line 77 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!addInput@{addInput}}
+\index{addInput@{addInput}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::addInput ( {\em self},  {\em dest},  {\em weight} = {\tt 1.0})}\label{classapp_1_1nn_1_1network_1_1Network_7a77c51e80bdc30e54e65aa37ebb35a0}
+
+
+
+
+Definition at line 89 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!addOutput@{addOutput}}
+\index{addOutput@{addOutput}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::addOutput ( {\em self},  {\em src},  {\em weight} = {\tt 1.0})}\label{classapp_1_1nn_1_1network_1_1Network_fcc30e0ad3bb017848647f4555e711d8}
+
+
+
+
+Definition at line 96 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!test@{test}}
+\index{test@{test}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::network::Network::test ( {\em self},  {\em pattern})}\label{classapp_1_1nn_1_1network_1_1Network_66763f465512df908319d50ea2de5351}
+
+
+
+
+Definition at line 103 of file network.py.
+
+\subsection{Member Data Documentation}
+\index{app::nn::network::Network@{app::nn::network::Network}!nodes@{nodes}}
+\index{nodes@{nodes}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::network::Network::nodes}}\label{classapp_1_1nn_1_1network_1_1Network_728fea7d8dce2ae996690ee9a56effc8}
+
+
+
+
+Definition at line 7 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!connections@{connections}}
+\index{connections@{connections}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::network::Network::connections}}\label{classapp_1_1nn_1_1network_1_1Network_623e39a73d643cfb1d68581c62e6dcaf}
+
+
+
+
+Definition at line 8 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!index@{index}}
+\index{index@{index}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::network::Network::index}}\label{classapp_1_1nn_1_1network_1_1Network_68b2ae20d625448a4ad84e7fa52ddcff}
+
+
+
+
+Definition at line 9 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!tnodes@{tnodes}}
+\index{tnodes@{tnodes}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::network::Network::tnodes}}\label{classapp_1_1nn_1_1network_1_1Network_797e752f2bc369f420c252b212c9ae38}
+
+
+
+
+Definition at line 10 of file network.py.\index{app::nn::network::Network@{app::nn::network::Network}!doprop@{doprop}}
+\index{doprop@{doprop}!app::nn::network::Network@{app::nn::network::Network}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::network::Network::doprop}}\label{classapp_1_1nn_1_1network_1_1Network_82eb1678085572fd26300b5161b8c069}
+
+
+
+
+Reimplemented in {\bf app::nn::layerednetwork::LayeredNetwork} \doxyref{}{p.}{classapp_1_1nn_1_1layerednetwork_1_1LayeredNetwork_d5c948a66240934a4112c16e3c42dfed}.
+
+Definition at line 11 of file network.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/nn/{\bf network.py}\end{CompactItemize}

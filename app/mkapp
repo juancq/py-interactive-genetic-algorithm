@@ -1,0 +1,52 @@
+#!/bin/bash
+
+if [ "$1" = "" ]; then 
+    echo "Missing arguments:  mkapp appname "
+    exit
+fi
+
+
+mkdir $1
+touch $1/__init__.py
+cd $1
+
+name=`echo $1 | awk '{ printf("%s%s", toupper(substr($0,1,1)),(substr($0,2)));}'`
+echo "
+import wx
+import app.app as app
+
+
+class $name(app.Application):
+    def __init__(self, params, random):
+        app.Application.__init__(self, params, random)
+
+#-------------------------------------------#
+    def fitness(self, ind, user_feedback):
+        '''
+        Compute fitness.
+        user_feedback is a list of the user's input,
+        the list contents are ordered the same as the 
+        feedback variable in the config yaml file.
+        [best]
+        '''
+        best = user_feedback[0]
+
+#-------------------------------------------#
+    def draw(self, parentPanel, subset):
+        '''
+        Return a list of panels to be displayed to the user for evaluation.
+        Use the arg parentPanel as the parent for each of the panels created.
+        '''
+        # example, creating empty panels to display
+        panel = []
+        for i in xrange(len(subset)):
+            panel.append(wx.Panel(parentPanel))
+        return panel
+
+#-------------------------------------------#
+"> $1.py
+
+echo "inherits: [iga.yml]
+application:
+  name: $1" > ../../config/$1.yml
+

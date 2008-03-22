@@ -1,0 +1,375 @@
+\section{\_\-yaml\_\-::parser::Parser Class Reference}
+\label{class__yaml___1_1parser_1_1Parser}\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+Inheritance diagram for \_\-yaml\_\-::parser::Parser:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class__yaml___1_1parser_1_1Parser__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf check\_\-event}
+\item 
+def {\bf peek\_\-event}
+\item 
+def {\bf get\_\-event}
+\item 
+def {\bf parse\_\-stream\_\-start}
+\item 
+def {\bf parse\_\-implicit\_\-document\_\-start}
+\item 
+def {\bf parse\_\-document\_\-start}
+\item 
+def {\bf parse\_\-document\_\-end}
+\item 
+def {\bf parse\_\-document\_\-content}
+\item 
+def {\bf process\_\-directives}
+\item 
+def {\bf parse\_\-block\_\-node}
+\item 
+def {\bf parse\_\-flow\_\-node}
+\item 
+def {\bf parse\_\-block\_\-node\_\-or\_\-indentless\_\-sequence}
+\item 
+def {\bf parse\_\-node}
+\item 
+def {\bf parse\_\-block\_\-sequence\_\-first\_\-entry}
+\item 
+def {\bf parse\_\-block\_\-sequence\_\-entry}
+\item 
+def {\bf parse\_\-indentless\_\-sequence\_\-entry}
+\item 
+def {\bf parse\_\-block\_\-mapping\_\-first\_\-key}
+\item 
+def {\bf parse\_\-block\_\-mapping\_\-key}
+\item 
+def {\bf parse\_\-block\_\-mapping\_\-value}
+\item 
+def {\bf parse\_\-flow\_\-sequence\_\-first\_\-entry}
+\item 
+def {\bf parse\_\-flow\_\-sequence\_\-entry}
+\item 
+def {\bf parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-key}
+\item 
+def {\bf parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-value}
+\item 
+def {\bf parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-end}
+\item 
+def {\bf parse\_\-flow\_\-mapping\_\-first\_\-key}
+\item 
+def {\bf parse\_\-flow\_\-mapping\_\-key}
+\item 
+def {\bf parse\_\-flow\_\-mapping\_\-value}
+\item 
+def {\bf parse\_\-flow\_\-mapping\_\-empty\_\-value}
+\item 
+def {\bf process\_\-empty\_\-scalar}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf current\_\-event}
+\item 
+{\bf yaml\_\-version}
+\item 
+{\bf tag\_\-handles}
+\item 
+{\bf states}
+\item 
+{\bf marks}
+\item 
+{\bf state}
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+dictionary {\bf DEFAULT\_\-TAGS}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 72 of file parser.py.
+
+\subsection{Member Function Documentation}
+\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::\_\-\_\-init\_\-\_\- ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_3182fc0509dd87d937b095948eed3e5e}
+
+
+
+
+Definition at line 83 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!check_event@{check\_\-event}}
+\index{check_event@{check\_\-event}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::check\_\-event ( {\em self},  {\em choices})}\label{class__yaml___1_1parser_1_1Parser_0c6a0f91006f91fc56a56918d8d60ec5}
+
+
+
+
+Definition at line 91 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!peek_event@{peek\_\-event}}
+\index{peek_event@{peek\_\-event}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::peek\_\-event ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_40cafda10f2ed0e2e4adfa6bce21dbc2}
+
+
+
+
+Definition at line 104 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!get_event@{get\_\-event}}
+\index{get_event@{get\_\-event}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::get\_\-event ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_6cb8c7e43736bab864345bcc8a41e473}
+
+
+
+
+Definition at line 111 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_stream_start@{parse\_\-stream\_\-start}}
+\index{parse_stream_start@{parse\_\-stream\_\-start}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-stream\_\-start ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_452a83fa7209df89cd0d502e41b331b2}
+
+
+
+
+Definition at line 124 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_implicit_document_start@{parse\_\-implicit\_\-document\_\-start}}
+\index{parse_implicit_document_start@{parse\_\-implicit\_\-document\_\-start}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-implicit\_\-document\_\-start ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_113460e4730017d1a90fe9f882e83fa9}
+
+
+
+
+Definition at line 136 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_document_start@{parse\_\-document\_\-start}}
+\index{parse_document_start@{parse\_\-document\_\-start}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-document\_\-start ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_4909c7be3f491700ea352670c891c0bb}
+
+
+
+
+Definition at line 156 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_document_end@{parse\_\-document\_\-end}}
+\index{parse_document_end@{parse\_\-document\_\-end}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-document\_\-end ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_21bc325de4845bc754a4d9300a336a3f}
+
+
+
+
+Definition at line 187 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_document_content@{parse\_\-document\_\-content}}
+\index{parse_document_content@{parse\_\-document\_\-content}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-document\_\-content ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_3602fadd4dbde11fa22e8ed719db4ee0}
+
+
+
+
+Definition at line 205 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!process_directives@{process\_\-directives}}
+\index{process_directives@{process\_\-directives}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::process\_\-directives ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_59085514a4ed3277c425be9df955689e}
+
+
+
+
+Definition at line 214 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_node@{parse\_\-block\_\-node}}
+\index{parse_block_node@{parse\_\-block\_\-node}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-node ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_c573cede314877fa8559ae44d4d73ad2}
+
+
+
+
+Definition at line 261 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_node@{parse\_\-flow\_\-node}}
+\index{parse_flow_node@{parse\_\-flow\_\-node}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-node ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_216ff595be12e2b5b5b561bcbba560d8}
+
+
+
+
+Definition at line 264 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_node_or_indentless_sequence@{parse\_\-block\_\-node\_\-or\_\-indentless\_\-sequence}}
+\index{parse_block_node_or_indentless_sequence@{parse\_\-block\_\-node\_\-or\_\-indentless\_\-sequence}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-node\_\-or\_\-indentless\_\-sequence ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_efd2623cdf174636f06ebf2352409184}
+
+
+
+
+Definition at line 267 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_node@{parse\_\-node}}
+\index{parse_node@{parse\_\-node}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-node ( {\em self},  {\em block} = {\tt False},  {\em indentless\_\-sequence} = {\tt False})}\label{class__yaml___1_1parser_1_1Parser_e1cd231e21be490f7af1b9d156aeb03a}
+
+
+
+
+Definition at line 270 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_sequence_first_entry@{parse\_\-block\_\-sequence\_\-first\_\-entry}}
+\index{parse_block_sequence_first_entry@{parse\_\-block\_\-sequence\_\-first\_\-entry}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-sequence\_\-first\_\-entry ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_c74fff85207870b3eff155f3186d835d}
+
+
+
+
+Definition at line 373 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_sequence_entry@{parse\_\-block\_\-sequence\_\-entry}}
+\index{parse_block_sequence_entry@{parse\_\-block\_\-sequence\_\-entry}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-sequence\_\-entry ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_89033626f364e43673001eb09da3937a}
+
+
+
+
+Definition at line 378 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_indentless_sequence_entry@{parse\_\-indentless\_\-sequence\_\-entry}}
+\index{parse_indentless_sequence_entry@{parse\_\-indentless\_\-sequence\_\-entry}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-indentless\_\-sequence\_\-entry ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_25b606f39a59b9951daeb7507e91176e}
+
+
+
+
+Definition at line 399 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_mapping_first_key@{parse\_\-block\_\-mapping\_\-first\_\-key}}
+\index{parse_block_mapping_first_key@{parse\_\-block\_\-mapping\_\-first\_\-key}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-mapping\_\-first\_\-key ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_eae73063ad57d21458a453d15d891652}
+
+
+
+
+Definition at line 419 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_mapping_key@{parse\_\-block\_\-mapping\_\-key}}
+\index{parse_block_mapping_key@{parse\_\-block\_\-mapping\_\-key}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-mapping\_\-key ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_35de8c14192956f90005fdfe564deacf}
+
+
+
+
+Definition at line 424 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_block_mapping_value@{parse\_\-block\_\-mapping\_\-value}}
+\index{parse_block_mapping_value@{parse\_\-block\_\-mapping\_\-value}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-block\_\-mapping\_\-value ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_a6a5a3ef7efe3146bd2fa67665efefd7}
+
+
+
+
+Definition at line 443 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_sequence_first_entry@{parse\_\-flow\_\-sequence\_\-first\_\-entry}}
+\index{parse_flow_sequence_first_entry@{parse\_\-flow\_\-sequence\_\-first\_\-entry}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-sequence\_\-first\_\-entry ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_3dfd7f4b01e2252f209d6fe18c412bdb}
+
+
+
+
+Definition at line 468 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_sequence_entry@{parse\_\-flow\_\-sequence\_\-entry}}
+\index{parse_flow_sequence_entry@{parse\_\-flow\_\-sequence\_\-entry}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-sequence\_\-entry ( {\em self},  {\em first} = {\tt False})}\label{class__yaml___1_1parser_1_1Parser_5548987a6ff388501740ddef8cc5449a}
+
+
+
+
+Definition at line 473 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_sequence_entry_mapping_key@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-key}}
+\index{parse_flow_sequence_entry_mapping_key@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-key}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-key ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_4fb13ade2380e746cbeac9d5207941fe}
+
+
+
+
+Definition at line 499 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_sequence_entry_mapping_value@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-value}}
+\index{parse_flow_sequence_entry_mapping_value@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-value}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-value ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_9f873130db5b1f4254bfa82df2d22a30}
+
+
+
+
+Definition at line 509 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_sequence_entry_mapping_end@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-end}}
+\index{parse_flow_sequence_entry_mapping_end@{parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-end}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-sequence\_\-entry\_\-mapping\_\-end ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_e8edf26d5abf45e70d3d65f72d7ac2a2}
+
+
+
+
+Definition at line 523 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_mapping_first_key@{parse\_\-flow\_\-mapping\_\-first\_\-key}}
+\index{parse_flow_mapping_first_key@{parse\_\-flow\_\-mapping\_\-first\_\-key}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-mapping\_\-first\_\-key ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_e22f10b288c1aed83e1e4f90fb7d1a33}
+
+
+
+
+Definition at line 534 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_mapping_key@{parse\_\-flow\_\-mapping\_\-key}}
+\index{parse_flow_mapping_key@{parse\_\-flow\_\-mapping\_\-key}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-mapping\_\-key ( {\em self},  {\em first} = {\tt False})}\label{class__yaml___1_1parser_1_1Parser_6e568c30d0d6c38bb8dea17648dbb340}
+
+
+
+
+Definition at line 539 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_mapping_value@{parse\_\-flow\_\-mapping\_\-value}}
+\index{parse_flow_mapping_value@{parse\_\-flow\_\-mapping\_\-value}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-mapping\_\-value ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_14545b43a3a74e2745f902d57be295d7}
+
+
+
+
+Definition at line 566 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!parse_flow_mapping_empty_value@{parse\_\-flow\_\-mapping\_\-empty\_\-value}}
+\index{parse_flow_mapping_empty_value@{parse\_\-flow\_\-mapping\_\-empty\_\-value}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::parse\_\-flow\_\-mapping\_\-empty\_\-value ( {\em self})}\label{class__yaml___1_1parser_1_1Parser_6290845ab46bb16251ff2b54f6719201}
+
+
+
+
+Definition at line 580 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!process_empty_scalar@{process\_\-empty\_\-scalar}}
+\index{process_empty_scalar@{process\_\-empty\_\-scalar}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parser::Parser::process\_\-empty\_\-scalar ( {\em self},  {\em mark})}\label{class__yaml___1_1parser_1_1Parser_dd0c73fff91d16fbb1ac7ed6818c63b7}
+
+
+
+
+Definition at line 584 of file parser.py.
+
+\subsection{Member Data Documentation}
+\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!DEFAULT_TAGS@{DEFAULT\_\-TAGS}}
+\index{DEFAULT_TAGS@{DEFAULT\_\-TAGS}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf \_\-yaml\_\-::parser::Parser::DEFAULT\_\-TAGS}\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1parser_1_1Parser_df6b1d18a1781ce45d16c531a538f744}
+
+
+\textbf{Initial value:}
+
+\begin{Code}\begin{verbatim}{
+        u'!':   u'!',
+        u'!!':  u'tag:yaml.org,2002:',
+    }
+\end{verbatim}
+\end{Code}
+
+
+Definition at line 78 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!current_event@{current\_\-event}}
+\index{current_event@{current\_\-event}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::current\_\-event}}\label{class__yaml___1_1parser_1_1Parser_b9a5582dc9a3605e4078719193143f7d}
+
+
+
+
+Definition at line 84 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!yaml_version@{yaml\_\-version}}
+\index{yaml_version@{yaml\_\-version}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::yaml\_\-version}}\label{class__yaml___1_1parser_1_1Parser_61bff7a829daae707028718ac804267b}
+
+
+
+
+Definition at line 85 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!tag_handles@{tag\_\-handles}}
+\index{tag_handles@{tag\_\-handles}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::tag\_\-handles}}\label{class__yaml___1_1parser_1_1Parser_1533125ae40211499845aade1403704e}
+
+
+
+
+Definition at line 86 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!states@{states}}
+\index{states@{states}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::states}}\label{class__yaml___1_1parser_1_1Parser_251c2accc3860cf72bc71948861b9322}
+
+
+
+
+Definition at line 87 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!marks@{marks}}
+\index{marks@{marks}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::marks}}\label{class__yaml___1_1parser_1_1Parser_8df2a5817a3c8b162ad2df3ae65da4a1}
+
+
+
+
+Definition at line 88 of file parser.py.\index{_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}!state@{state}}
+\index{state@{state}!_yaml_::parser::Parser@{\_\-yaml\_\-::parser::Parser}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::parser::Parser::state}}\label{class__yaml___1_1parser_1_1Parser_5ae7c636c12e9208ec83dc4cccf83550}
+
+
+
+
+Definition at line 89 of file parser.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/\_\-yaml\_\-/{\bf parser.py}\end{CompactItemize}

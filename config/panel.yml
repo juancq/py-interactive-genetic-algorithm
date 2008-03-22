@@ -1,0 +1,23 @@
+panel:
+    label:
+        label1: 
+            value: MOVETO
+        label2:
+            value: 'Move Coord X:'
+            link: textbox1
+        label3:
+            value: 'Move Coord Y:'
+        label4:
+            value: Selector
+        label5:
+            value: knots
+    button:
+        button1: 
+            value: Start
+    slider:
+        size: (100,-1)
+    textbox:
+        textbox1:
+            value: 25000
+        textbox2:
+            value: 38200

@@ -1,0 +1,178 @@
+\section{\_\-yaml\_\-::resolver::BaseResolver Class Reference}
+\label{class__yaml___1_1resolver_1_1BaseResolver}\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+Inheritance diagram for \_\-yaml\_\-::resolver::BaseResolver:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class__yaml___1_1resolver_1_1BaseResolver__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf add\_\-implicit\_\-resolver}
+\item 
+def {\bf add\_\-path\_\-resolver}
+\item 
+def {\bf descend\_\-resolver}
+\item 
+def {\bf ascend\_\-resolver}
+\item 
+def {\bf check\_\-resolver\_\-prefix}
+\item 
+def {\bf resolve}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf resolver\_\-exact\_\-paths}
+\item 
+{\bf resolver\_\-prefix\_\-paths}
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+string {\bf DEFAULT\_\-SCALAR\_\-TAG} = u'tag:yaml.org,2002:str'
+\item 
+string {\bf DEFAULT\_\-SEQUENCE\_\-TAG} = u'tag:yaml.org,2002:seq'
+\item 
+string {\bf DEFAULT\_\-MAPPING\_\-TAG} = u'tag:yaml.org,2002:map'
+\item 
+dictionary {\bf yaml\_\-implicit\_\-resolvers} = \{\}
+\item 
+dictionary {\bf yaml\_\-path\_\-resolvers} = \{\}
+\item 
+tuple {\bf add\_\-implicit\_\-resolver} = classmethod({\bf add\_\-implicit\_\-resolver})
+\item 
+tuple {\bf add\_\-path\_\-resolver} = classmethod({\bf add\_\-path\_\-resolver})
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file resolver.py.
+
+\subsection{Member Function Documentation}
+\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::resolver::BaseResolver::\_\-\_\-init\_\-\_\- ( {\em self})}\label{class__yaml___1_1resolver_1_1BaseResolver_b4cf580f507c870ba572413b41db7e3e}
+
+
+
+
+Definition at line 21 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!add_implicit_resolver@{add\_\-implicit\_\-resolver}}
+\index{add_implicit_resolver@{add\_\-implicit\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def {\bf \_\-yaml\_\-::resolver::BaseResolver::add\_\-implicit\_\-resolver} ( {\em cls},  {\em tag},  {\em regexp},  {\em first})}\label{class__yaml___1_1resolver_1_1BaseResolver_f381e70e41323998cc5bcc641237df0a}
+
+
+
+
+Definition at line 25 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!add_path_resolver@{add\_\-path\_\-resolver}}
+\index{add_path_resolver@{add\_\-path\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def {\bf \_\-yaml\_\-::resolver::BaseResolver::add\_\-path\_\-resolver} ( {\em cls},  {\em tag},  {\em path},  {\em kind} = {\tt None})}\label{class__yaml___1_1resolver_1_1BaseResolver_2f144712a23a525fdfa598caf85e2687}
+
+
+
+
+Definition at line 34 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!descend_resolver@{descend\_\-resolver}}
+\index{descend_resolver@{descend\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::resolver::BaseResolver::descend\_\-resolver ( {\em self},  {\em current\_\-node},  {\em current\_\-index})}\label{class__yaml___1_1resolver_1_1BaseResolver_229226258f48f1b1d8936b7471e8ba86}
+
+
+
+
+Definition at line 88 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!ascend_resolver@{ascend\_\-resolver}}
+\index{ascend_resolver@{ascend\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::resolver::BaseResolver::ascend\_\-resolver ( {\em self})}\label{class__yaml___1_1resolver_1_1BaseResolver_46f0fd2a11277dfa7a49c80924cfb726}
+
+
+
+
+Definition at line 111 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!check_resolver_prefix@{check\_\-resolver\_\-prefix}}
+\index{check_resolver_prefix@{check\_\-resolver\_\-prefix}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::resolver::BaseResolver::check\_\-resolver\_\-prefix ( {\em self},  {\em depth},  {\em path},  {\em kind},  {\em current\_\-node},  {\em current\_\-index})}\label{class__yaml___1_1resolver_1_1BaseResolver_172b5f827c17f2f218bb8597e2a42b69}
+
+
+
+
+Definition at line 117 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::resolver::BaseResolver::resolve ( {\em self},  {\em kind},  {\em value},  {\em implicit})}\label{class__yaml___1_1resolver_1_1BaseResolver_04eb7f73756ad061643f7212c0fda319}
+
+
+
+
+Definition at line 140 of file resolver.py.
+
+\subsection{Member Data Documentation}
+\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!DEFAULT_SCALAR_TAG@{DEFAULT\_\-SCALAR\_\-TAG}}
+\index{DEFAULT_SCALAR_TAG@{DEFAULT\_\-SCALAR\_\-TAG}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf \_\-yaml\_\-::resolver::BaseResolver::DEFAULT\_\-SCALAR\_\-TAG} = u'tag:yaml.org,2002:str'\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_9ea914b8a38c1626ccd3224b32c81f9f}
+
+
+
+
+Definition at line 14 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!DEFAULT_SEQUENCE_TAG@{DEFAULT\_\-SEQUENCE\_\-TAG}}
+\index{DEFAULT_SEQUENCE_TAG@{DEFAULT\_\-SEQUENCE\_\-TAG}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf \_\-yaml\_\-::resolver::BaseResolver::DEFAULT\_\-SEQUENCE\_\-TAG} = u'tag:yaml.org,2002:seq'\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_c400739ecdad858331c34a26665fce5a}
+
+
+
+
+Definition at line 15 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!DEFAULT_MAPPING_TAG@{DEFAULT\_\-MAPPING\_\-TAG}}
+\index{DEFAULT_MAPPING_TAG@{DEFAULT\_\-MAPPING\_\-TAG}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf \_\-yaml\_\-::resolver::BaseResolver::DEFAULT\_\-MAPPING\_\-TAG} = u'tag:yaml.org,2002:map'\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_33aeef1a92c33685babc52328b7280db}
+
+
+
+
+Definition at line 16 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!yaml_implicit_resolvers@{yaml\_\-implicit\_\-resolvers}}
+\index{yaml_implicit_resolvers@{yaml\_\-implicit\_\-resolvers}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf \_\-yaml\_\-::resolver::BaseResolver::yaml\_\-implicit\_\-resolvers} = \{\}\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_69ce91c40c07be32ca82bc2ed362e9d3}
+
+
+
+
+Definition at line 18 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!yaml_path_resolvers@{yaml\_\-path\_\-resolvers}}
+\index{yaml_path_resolvers@{yaml\_\-path\_\-resolvers}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf \_\-yaml\_\-::resolver::BaseResolver::yaml\_\-path\_\-resolvers} = \{\}\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_a1dc7a4f26be7ed08eb557ebb61095aa}
+
+
+
+
+Definition at line 19 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!add_implicit_resolver@{add\_\-implicit\_\-resolver}}
+\index{add_implicit_resolver@{add\_\-implicit\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf \_\-yaml\_\-::resolver::BaseResolver::add\_\-implicit\_\-resolver} = classmethod({\bf add\_\-implicit\_\-resolver})\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_59ace850db6245b33fa5584f9b225283}
+
+
+
+
+Definition at line 32 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!add_path_resolver@{add\_\-path\_\-resolver}}
+\index{add_path_resolver@{add\_\-path\_\-resolver}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf \_\-yaml\_\-::resolver::BaseResolver::add\_\-path\_\-resolver} = classmethod({\bf add\_\-path\_\-resolver})\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1resolver_1_1BaseResolver_ca815849a83134147ce4a35fc964ccc3}
+
+
+
+
+Definition at line 86 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!resolver_exact_paths@{resolver\_\-exact\_\-paths}}
+\index{resolver_exact_paths@{resolver\_\-exact\_\-paths}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::resolver::BaseResolver::resolver\_\-exact\_\-paths}}\label{class__yaml___1_1resolver_1_1BaseResolver_6e0871e34ff87873a6c5c75e8956f555}
+
+
+
+
+Definition at line 22 of file resolver.py.\index{_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}!resolver_prefix_paths@{resolver\_\-prefix\_\-paths}}
+\index{resolver_prefix_paths@{resolver\_\-prefix\_\-paths}!_yaml_::resolver::BaseResolver@{\_\-yaml\_\-::resolver::BaseResolver}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::resolver::BaseResolver::resolver\_\-prefix\_\-paths}}\label{class__yaml___1_1resolver_1_1BaseResolver_53b3109750a3095877d1ac02f9452ec7}
+
+
+
+
+Definition at line 23 of file resolver.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/\_\-yaml\_\-/{\bf resolver.py}\end{CompactItemize}

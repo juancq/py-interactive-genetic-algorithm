@@ -1,0 +1,26 @@
+inherits: [ga.yml]
+seed: None
+numgen: 100
+population:
+  type: gastandard
+  size: 200
+  selection: tournament
+  combinepop: elitist
+crossover:
+  type: simple
+  prob: 0.7
+  points: 2
+mutation:
+  type: simple
+  prob: 0.05
+application:
+  name: funcopt
+  vars:
+    x: 
+        max: 12
+        min: -12
+        scale: .001
+    y: 
+        max: 12
+        min: -12
+        scale: .001

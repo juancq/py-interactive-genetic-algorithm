@@ -1,0 +1,234 @@
+\section{\_\-yaml\_\-::reader::Reader Class Reference}
+\label{class__yaml___1_1reader_1_1Reader}\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+Inheritance diagram for \_\-yaml\_\-::reader::Reader:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class__yaml___1_1reader_1_1Reader__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf peek}
+\item 
+def {\bf prefix}
+\item 
+def {\bf forward}
+\item 
+def {\bf get\_\-mark}
+\item 
+def {\bf determine\_\-encoding}
+\item 
+def {\bf check\_\-printable}
+\item 
+def {\bf update}
+\item 
+def {\bf update\_\-raw}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf name}
+\item 
+{\bf stream}
+\item 
+{\bf stream\_\-pointer}
+\item 
+{\bf eof}
+\item 
+{\bf buffer}
+\item 
+{\bf pointer}
+\item 
+{\bf raw\_\-buffer}
+\item 
+{\bf raw\_\-decode}
+\item 
+{\bf encoding}
+\item 
+{\bf index}
+\item 
+{\bf line}
+\item 
+{\bf column}
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+tuple {\bf NON\_\-PRINTABLE} = re.compile(u'[$^\wedge$$\backslash$x09$\backslash$x0A$\backslash$x0D$\backslash$x20-$\backslash$x7E$\backslash$x85$\backslash$xA0-$\backslash$uD7FF$\backslash$uE000-$\backslash$uFFFD]')
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 80 of file reader.py.
+
+\subsection{Member Function Documentation}
+\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::\_\-\_\-init\_\-\_\- ( {\em self},  {\em stream})}\label{class__yaml___1_1reader_1_1Reader_c7167a8e975559a7755c030a0d2973bb}
+
+
+
+
+Reimplemented in {\bf \_\-yaml\_\-::loader::BaseLoader} \doxyref{}{p.}{class__yaml___1_1loader_1_1BaseLoader_351890654d82a07ee7ab03fe8b212b46}, {\bf \_\-yaml\_\-::loader::SafeLoader} \doxyref{}{p.}{class__yaml___1_1loader_1_1SafeLoader_9ef8c64523dad10e5a40d1c83cf5de89}, and {\bf \_\-yaml\_\-::loader::Loader} \doxyref{}{p.}{class__yaml___1_1loader_1_1Loader_a5fd4e3aaf5b73ff8f401b3772748f59}.
+
+Definition at line 94 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!peek@{peek}}
+\index{peek@{peek}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::peek ( {\em self},  {\em index} = {\tt 0})}\label{class__yaml___1_1reader_1_1Reader_6e96c2b2215c5833c00451d6f6c6e54d}
+
+
+
+
+Definition at line 122 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!prefix@{prefix}}
+\index{prefix@{prefix}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::prefix ( {\em self},  {\em length} = {\tt 1})}\label{class__yaml___1_1reader_1_1Reader_f2d3bb39465f421e6acb9fa9d5ff900c}
+
+
+
+
+Definition at line 129 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!forward@{forward}}
+\index{forward@{forward}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::forward ( {\em self},  {\em length} = {\tt 1})}\label{class__yaml___1_1reader_1_1Reader_0f4e874be06dbda2c2d255902153447b}
+
+
+
+
+Definition at line 134 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!get_mark@{get\_\-mark}}
+\index{get_mark@{get\_\-mark}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::get\_\-mark ( {\em self})}\label{class__yaml___1_1reader_1_1Reader_ac8465d401fd4f8e82a9b411fe218d12}
+
+
+
+
+Definition at line 149 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!determine_encoding@{determine\_\-encoding}}
+\index{determine_encoding@{determine\_\-encoding}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::determine\_\-encoding ( {\em self})}\label{class__yaml___1_1reader_1_1Reader_1cf26b77f5e0bd69735f3d0e11586e73}
+
+
+
+
+Definition at line 157 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!check_printable@{check\_\-printable}}
+\index{check_printable@{check\_\-printable}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::check\_\-printable ( {\em self},  {\em data})}\label{class__yaml___1_1reader_1_1Reader_72d1345a76ab5881608ac1b303a7f268}
+
+
+
+
+Definition at line 173 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!update@{update}}
+\index{update@{update}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::update ( {\em self},  {\em length})}\label{class__yaml___1_1reader_1_1Reader_649662aacb75316afd9e2bf40ff45c8e}
+
+
+
+
+Definition at line 181 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!update_raw@{update\_\-raw}}
+\index{update_raw@{update\_\-raw}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::reader::Reader::update\_\-raw ( {\em self},  {\em size} = {\tt 1024})}\label{class__yaml___1_1reader_1_1Reader_2e3ba197d926d21e1822de119184d6e2}
+
+
+
+
+Definition at line 212 of file reader.py.
+
+\subsection{Member Data Documentation}
+\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!NON_PRINTABLE@{NON\_\-PRINTABLE}}
+\index{NON_PRINTABLE@{NON\_\-PRINTABLE}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf \_\-yaml\_\-::reader::Reader::NON\_\-PRINTABLE} = re.compile(u'[$^\wedge$$\backslash$x09$\backslash$x0A$\backslash$x0D$\backslash$x20-$\backslash$x7E$\backslash$x85$\backslash$xA0-$\backslash$uD7FF$\backslash$uE000-$\backslash$uFFFD]')\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1reader_1_1Reader_270490653019399941fcb519425f010d}
+
+
+
+
+Definition at line 172 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!name@{name}}
+\index{name@{name}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::name}}\label{class__yaml___1_1reader_1_1Reader_3caaaafeaf38d3f6ce793a84e555617d}
+
+
+
+
+Definition at line 95 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!stream@{stream}}
+\index{stream@{stream}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::stream}}\label{class__yaml___1_1reader_1_1Reader_89e157d9a68b879b03e2f3f283cbb077}
+
+
+
+
+Definition at line 96 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!stream_pointer@{stream\_\-pointer}}
+\index{stream_pointer@{stream\_\-pointer}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::stream\_\-pointer}}\label{class__yaml___1_1reader_1_1Reader_b18f506d565a13f2bfac80d4d4de3eb9}
+
+
+
+
+Definition at line 97 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!eof@{eof}}
+\index{eof@{eof}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::eof}}\label{class__yaml___1_1reader_1_1Reader_1d48ce4b1a79b0f72bef2f2ca047d204}
+
+
+
+
+Definition at line 98 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!buffer@{buffer}}
+\index{buffer@{buffer}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::buffer}}\label{class__yaml___1_1reader_1_1Reader_4cde4271e677f544b5ecdc8aac2b7674}
+
+
+
+
+Definition at line 99 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!pointer@{pointer}}
+\index{pointer@{pointer}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::pointer}}\label{class__yaml___1_1reader_1_1Reader_0aec202340cafa885af5e830bd62f611}
+
+
+
+
+Definition at line 100 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!raw_buffer@{raw\_\-buffer}}
+\index{raw_buffer@{raw\_\-buffer}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::raw\_\-buffer}}\label{class__yaml___1_1reader_1_1Reader_054b7535ac28ed9716d52a7dc5bae41f}
+
+
+
+
+Definition at line 101 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!raw_decode@{raw\_\-decode}}
+\index{raw_decode@{raw\_\-decode}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::raw\_\-decode}}\label{class__yaml___1_1reader_1_1Reader_e1140cd7bc7a116c41c8df3dfff5b47b}
+
+
+
+
+Definition at line 102 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!encoding@{encoding}}
+\index{encoding@{encoding}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::encoding}}\label{class__yaml___1_1reader_1_1Reader_a9377cc26a9780023568ff231af5e22b}
+
+
+
+
+Definition at line 103 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!index@{index}}
+\index{index@{index}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::index}}\label{class__yaml___1_1reader_1_1Reader_d88c207ef9f54bd5f6e409a189b2cf64}
+
+
+
+
+Definition at line 104 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!line@{line}}
+\index{line@{line}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::line}}\label{class__yaml___1_1reader_1_1Reader_ccfc081dbc33800bf610d954f41ba939}
+
+
+
+
+Definition at line 105 of file reader.py.\index{_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}!column@{column}}
+\index{column@{column}!_yaml_::reader::Reader@{\_\-yaml\_\-::reader::Reader}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::reader::Reader::column}}\label{class__yaml___1_1reader_1_1Reader_1099eab33695d706718691b795b829db}
+
+
+
+
+Definition at line 106 of file reader.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/\_\-yaml\_\-/{\bf reader.py}\end{CompactItemize}

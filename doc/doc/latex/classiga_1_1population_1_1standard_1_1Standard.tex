@@ -1,0 +1,186 @@
+\section{iga::population::standard::Standard Class Reference}
+\label{classiga_1_1population_1_1standard_1_1Standard}\index{iga::population::standard::Standard@{iga::population::standard::Standard}}
+Inheritance diagram for iga::population::standard::Standard:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classiga_1_1population_1_1standard_1_1Standard__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf userInput}
+\item 
+def {\bf getNRandom}
+\item 
+def {\bf fitnessBias}
+\item 
+def {\bf eval}
+\item 
+def {\bf setBloodLine}
+\item 
+def {\bf crossover}
+\item 
+def {\bf injectGenomes}
+\item 
+def {\bf selectSubset}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf subsetfunc}
+\item 
+{\bf injectfunc}
+\item 
+{\bf subset}
+\item 
+{\bf user\_\-selected}
+\item 
+{\bf subset\_\-index}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file standard.py.
+
+\subsection{Member Function Documentation}
+\index{iga::population::standard::Standard@{iga::population::standard::Standard}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::\_\-\_\-init\_\-\_\- ( {\em self},  {\em paramClass},  {\em paramDict})}\label{classiga_1_1population_1_1standard_1_1Standard_f368f3e29658b25f9fbdbacfa36ea0c2}
+
+
+
+
+Reimplemented in {\bf iga::population::nsga\_\-ii::Nsga\_\-ii} \doxyref{}{p.}{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_bde37079fa82731eae3d63952d198850}.
+
+Definition at line 4 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!userInput@{userInput}}
+\index{userInput@{userInput}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::userInput ( {\em self},  {\em user\_\-selection} = {\tt []})}\label{classiga_1_1population_1_1standard_1_1Standard_1a7386a866f12b4256641612d5eca737}
+
+
+
+
+\footnotesize\begin{verbatim}
+Takes a list of the indices of the individuals selected 
+by the user during evaluation, and we save the actual
+users on a list, to be used during fitness evaluation.
+It is the programmer's responsibility to decide on
+the meaning of the user feedback.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 23 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!getNRandom@{getNRandom}}
+\index{getNRandom@{getNRandom}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::getNRandom ( {\em self},  {\em num})}\label{classiga_1_1population_1_1standard_1_1Standard_c21680b324458918de5fc64fde7e4f32}
+
+
+
+
+Definition at line 37 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!fitnessBias@{fitnessBias}}
+\index{fitnessBias@{fitnessBias}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::fitnessBias ( {\em self},  {\em pop})}\label{classiga_1_1population_1_1standard_1_1Standard_b12a95d10bd39844bc2fab8ace4f1d30}
+
+
+
+
+Reimplemented in {\bf iga::population::nsga\_\-ii::Nsga\_\-ii} \doxyref{}{p.}{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_8a0812fc83305ee76831ba9f3cdb3f8e}.
+
+Definition at line 44 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!eval@{eval}}
+\index{eval@{eval}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::eval ( {\em self},  {\em pop} = {\tt None})}\label{classiga_1_1population_1_1standard_1_1Standard_d0a79082034d64d5e506d124cd739ccd}
+
+
+
+
+Definition at line 50 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!setBloodLine@{setBloodLine}}
+\index{setBloodLine@{setBloodLine}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::setBloodLine ( {\em self},  {\em p1},  {\em p2},  {\em c1},  {\em c2})}\label{classiga_1_1population_1_1standard_1_1Standard_7c77d39d459ebcc7771110ab22037092}
+
+
+
+
+\footnotesize\begin{verbatim}
+p1, p2: parent1, parent2
+c1, c2: child1, child2
+Set the bloodline of the children based on the bloodline of the parents.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 66 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!crossover@{crossover}}
+\index{crossover@{crossover}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::crossover ( {\em self},  {\em parent1},  {\em parent2})}\label{classiga_1_1population_1_1standard_1_1Standard_83cb4d2088dee384cd537ecbfc118d7a}
+
+
+
+
+Definition at line 77 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!injectGenomes@{injectGenomes}}
+\index{injectGenomes@{injectGenomes}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::injectGenomes ( {\em self},  {\em genomes})}\label{classiga_1_1population_1_1standard_1_1Standard_c4c82fd78cc042040096b61bbd223837}
+
+
+
+
+Definition at line 83 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!selectSubset@{selectSubset}}
+\index{selectSubset@{selectSubset}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::standard::Standard::selectSubset ( {\em self})}\label{classiga_1_1population_1_1standard_1_1Standard_a6aebb67ddafca6a738a2cc9ab8d7bab}
+
+
+
+
+\footnotesize\begin{verbatim}
+Select a small subset from the large population of the
+IGA to be displayed for user evaluation.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 92 of file standard.py.
+
+\subsection{Member Data Documentation}
+\index{iga::population::standard::Standard@{iga::population::standard::Standard}!subsetfunc@{subsetfunc}}
+\index{subsetfunc@{subsetfunc}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::population::standard::Standard::subsetfunc}}\label{classiga_1_1population_1_1standard_1_1Standard_9723f39dd6bfbf8bd33de1e214ed1301}
+
+
+
+
+Definition at line 11 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!injectfunc@{injectfunc}}
+\index{injectfunc@{injectfunc}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::population::standard::Standard::injectfunc}}\label{classiga_1_1population_1_1standard_1_1Standard_33f49f754c800c1911b6423de0ec2b61}
+
+
+
+
+Definition at line 16 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!subset@{subset}}
+\index{subset@{subset}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::population::standard::Standard::subset}}\label{classiga_1_1population_1_1standard_1_1Standard_333c42b88a23363aaa615ff19bb4809c}
+
+
+
+
+Definition at line 18 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!user_selected@{user\_\-selected}}
+\index{user_selected@{user\_\-selected}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::population::standard::Standard::user\_\-selected}}\label{classiga_1_1population_1_1standard_1_1Standard_fd519ccf79c2a53218dc7ab59fecbb0e}
+
+
+
+
+Definition at line 19 of file standard.py.\index{iga::population::standard::Standard@{iga::population::standard::Standard}!subset_index@{subset\_\-index}}
+\index{subset_index@{subset\_\-index}!iga::population::standard::Standard@{iga::population::standard::Standard}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::population::standard::Standard::subset\_\-index}}\label{classiga_1_1population_1_1standard_1_1Standard_8016c772756ed5d72288d89b848e3821}
+
+
+
+
+Definition at line 97 of file standard.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/iga/population/{\bf standard.py}\end{CompactItemize}

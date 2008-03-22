@@ -1,0 +1,35 @@
+seed: 200
+numgen: 50
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 9
+crossover:
+  type: mixed
+  prob: 0.8 
+  points: 1
+mutation:
+  type: mixed
+  prob: 0.01
+application:
+  name: xulglobalcolor
+  bits: 24
+  weight1: 0.5
+  weight2: 0.5
+
+  objScaleMax: 1000.0
+  objScaleMin: 0.0
+  subjScaleMax: 1000.0
+  subjScaleMin: 0.0
+  folder: data/
+  output: output
+  ui_file: moveto.panel
+  width: 360
+  height: 260
+  rows: 10
+  cols: 2
+  compare: both

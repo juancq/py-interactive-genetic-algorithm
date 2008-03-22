@@ -1,0 +1,196 @@
+\section{\_\-yaml\_\-::serializer::Serializer Class Reference}
+\label{class__yaml___1_1serializer_1_1Serializer}\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+Inheritance diagram for \_\-yaml\_\-::serializer::Serializer:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class__yaml___1_1serializer_1_1Serializer__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf open}
+\item 
+def {\bf close}
+\item 
+def {\bf serialize}
+\item 
+def {\bf anchor\_\-node}
+\item 
+def {\bf generate\_\-anchor}
+\item 
+def {\bf serialize\_\-node}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf use\_\-encoding}
+\item 
+{\bf use\_\-explicit\_\-start}
+\item 
+{\bf use\_\-explicit\_\-end}
+\item 
+{\bf use\_\-version}
+\item 
+{\bf use\_\-tags}
+\item 
+{\bf serialized\_\-nodes}
+\item 
+{\bf anchors}
+\item 
+{\bf last\_\-anchor\_\-id}
+\item 
+{\bf closed}
+\item 
+{\bf last\_\-alias\_\-id}
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+string {\bf ANCHOR\_\-TEMPLATE} = u'id\%03d'
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file serializer.py.
+
+\subsection{Member Function Documentation}
+\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::\_\-\_\-init\_\-\_\- ( {\em self},  {\em encoding} = {\tt None},  {\em explicit\_\-start} = {\tt None},  {\em explicit\_\-end} = {\tt None},  {\em version} = {\tt None},  {\em tags} = {\tt None})}\label{class__yaml___1_1serializer_1_1Serializer_9e540cc62759b0089697a9a3512e0f56}
+
+
+
+
+Definition at line 15 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!open@{open}}
+\index{open@{open}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::open ( {\em self})}\label{class__yaml___1_1serializer_1_1Serializer_530c11d4d1ca4f8a7bafdd5f0222ed1d}
+
+
+
+
+Definition at line 27 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!close@{close}}
+\index{close@{close}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::close ( {\em self})}\label{class__yaml___1_1serializer_1_1Serializer_ea7d2252dd9c1ca8e3b73913d7e12e3f}
+
+
+
+
+Definition at line 36 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::serialize ( {\em self},  {\em node})}\label{class__yaml___1_1serializer_1_1Serializer_5a3f4272cb9c2d6a744c692f0d723273}
+
+
+
+
+Definition at line 46 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!anchor_node@{anchor\_\-node}}
+\index{anchor_node@{anchor\_\-node}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::anchor\_\-node ( {\em self},  {\em node})}\label{class__yaml___1_1serializer_1_1Serializer_fec0a9121121135ccb62fa1864e14f66}
+
+
+
+
+Definition at line 60 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!generate_anchor@{generate\_\-anchor}}
+\index{generate_anchor@{generate\_\-anchor}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::generate\_\-anchor ( {\em self},  {\em node})}\label{class__yaml___1_1serializer_1_1Serializer_02d3da12fdf6f046b7c7b0cc9dafcdbf}
+
+
+
+
+Definition at line 74 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!serialize_node@{serialize\_\-node}}
+\index{serialize_node@{serialize\_\-node}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serializer::Serializer::serialize\_\-node ( {\em self},  {\em node},  {\em parent},  {\em index})}\label{class__yaml___1_1serializer_1_1Serializer_93b60a82fc11ba00432d919293bbe89c}
+
+
+
+
+Definition at line 78 of file serializer.py.
+
+\subsection{Member Data Documentation}
+\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!ANCHOR_TEMPLATE@{ANCHOR\_\-TEMPLATE}}
+\index{ANCHOR_TEMPLATE@{ANCHOR\_\-TEMPLATE}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf \_\-yaml\_\-::serializer::Serializer::ANCHOR\_\-TEMPLATE} = u'id\%03d'\hspace{0.3cm}{\tt  [static]}}\label{class__yaml___1_1serializer_1_1Serializer_697b2ac3197a544f34f639e9a0466035}
+
+
+
+
+Definition at line 13 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!use_encoding@{use\_\-encoding}}
+\index{use_encoding@{use\_\-encoding}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::use\_\-encoding}}\label{class__yaml___1_1serializer_1_1Serializer_ff1642694e1ea8fb32df5f3d9a016f62}
+
+
+
+
+Definition at line 16 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!use_explicit_start@{use\_\-explicit\_\-start}}
+\index{use_explicit_start@{use\_\-explicit\_\-start}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::use\_\-explicit\_\-start}}\label{class__yaml___1_1serializer_1_1Serializer_aee8494ae0ea92ee54a1b64494b3307c}
+
+
+
+
+Definition at line 17 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!use_explicit_end@{use\_\-explicit\_\-end}}
+\index{use_explicit_end@{use\_\-explicit\_\-end}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::use\_\-explicit\_\-end}}\label{class__yaml___1_1serializer_1_1Serializer_a39f804455cef83f8acbc8eee1bbb5ba}
+
+
+
+
+Definition at line 18 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!use_version@{use\_\-version}}
+\index{use_version@{use\_\-version}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::use\_\-version}}\label{class__yaml___1_1serializer_1_1Serializer_cbd8fed0d78f80c14f7b856354d5054a}
+
+
+
+
+Definition at line 19 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!use_tags@{use\_\-tags}}
+\index{use_tags@{use\_\-tags}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::use\_\-tags}}\label{class__yaml___1_1serializer_1_1Serializer_1b577dd08612f247c031519ffe1af0f5}
+
+
+
+
+Definition at line 20 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!serialized_nodes@{serialized\_\-nodes}}
+\index{serialized_nodes@{serialized\_\-nodes}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::serialized\_\-nodes}}\label{class__yaml___1_1serializer_1_1Serializer_c3cc80e32928ea287f53993e17017e30}
+
+
+
+
+Definition at line 21 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!anchors@{anchors}}
+\index{anchors@{anchors}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::anchors}}\label{class__yaml___1_1serializer_1_1Serializer_1720694384042324f5750bc9b60075fb}
+
+
+
+
+Definition at line 22 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!last_anchor_id@{last\_\-anchor\_\-id}}
+\index{last_anchor_id@{last\_\-anchor\_\-id}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::last\_\-anchor\_\-id}}\label{class__yaml___1_1serializer_1_1Serializer_4e1faeeb6d4e78e699c2a85eada09fbe}
+
+
+
+
+Definition at line 23 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!closed@{closed}}
+\index{closed@{closed}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::closed}}\label{class__yaml___1_1serializer_1_1Serializer_6e615d2b5eface0be73ef3c67eeb3fca}
+
+
+
+
+Definition at line 24 of file serializer.py.\index{_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}!last_alias_id@{last\_\-alias\_\-id}}
+\index{last_alias_id@{last\_\-alias\_\-id}!_yaml_::serializer::Serializer@{\_\-yaml\_\-::serializer::Serializer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::serializer::Serializer::last\_\-alias\_\-id}}\label{class__yaml___1_1serializer_1_1Serializer_9d5419a22fa192d1613c5f6190b8bb5b}
+
+
+
+
+Definition at line 58 of file serializer.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/\_\-yaml\_\-/{\bf serializer.py}\end{CompactItemize}

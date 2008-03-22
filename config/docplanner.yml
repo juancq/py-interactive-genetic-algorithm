@@ -1,0 +1,30 @@
+inherits: [iga.yml]
+numgen: 30
+stepSize: 1
+rowSize: 3
+peers: []
+population:
+  type: nsga_ii
+  size: 100
+  selection: crowded_tournament
+  combinepop: front_elitist
+  subset:
+    type: evenfront
+    size: 9
+crossover:
+  type: tree
+  prob: 0.75
+  points: 1
+mutation:
+  type: tree
+  prob: 0.2
+application:
+  name: docplanner
+  feedback: [Best]
+  maxDepth: 6
+  maxRoom: 8
+  minRoom: 3
+  plotSizeX: 150
+  plotSizeY: 200
+  template: [[1,0.7],[[1,0.5],[2,0.3]],[[2,0.7],[1,1.0],[1,1.0],[1,0.0]],[[1,1.0],[1,1.0]]]
+  num_shapes: 3

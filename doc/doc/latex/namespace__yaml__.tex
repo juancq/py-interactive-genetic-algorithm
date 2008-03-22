@@ -1,0 +1,402 @@
+\section{\_\-yaml\_\- Namespace Reference}
+\label{namespace__yaml__}\index{_yaml_@{\_\-yaml\_\-}}
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf YAMLObjectMetaclass}
+\item 
+class {\bf YAMLObject}
+\end{CompactItemize}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf composer}
+\item 
+namespace {\bf constructor}
+\item 
+namespace {\bf cyaml}
+\item 
+namespace {\bf dumper}
+\item 
+namespace {\bf emitter}
+\item 
+namespace {\bf error}
+\item 
+namespace {\bf events}
+\item 
+namespace {\bf loader}
+\item 
+namespace {\bf nodes}
+\item 
+namespace {\bf parser}
+\item 
+namespace {\bf reader}
+\item 
+namespace {\bf representer}
+\item 
+namespace {\bf resolver}
+\item 
+namespace {\bf scanner}
+\item 
+namespace {\bf serializer}
+\item 
+namespace {\bf tokens}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+def {\bf scan}
+\item 
+def {\bf parse}
+\item 
+def {\bf compose}
+\item 
+def {\bf compose\_\-all}
+\item 
+def {\bf load\_\-all}
+\item 
+def {\bf load}
+\item 
+def {\bf safe\_\-load\_\-all}
+\item 
+def {\bf safe\_\-load}
+\item 
+def {\bf emit}
+\item 
+def {\bf serialize\_\-all}
+\item 
+def {\bf serialize}
+\item 
+def {\bf dump\_\-all}
+\item 
+def {\bf dump}
+\item 
+def {\bf safe\_\-dump\_\-all}
+\item 
+def {\bf safe\_\-dump}
+\item 
+def {\bf add\_\-implicit\_\-resolver}
+\item 
+def {\bf add\_\-path\_\-resolver}
+\item 
+def {\bf add\_\-constructor}
+\item 
+def {\bf add\_\-multi\_\-constructor}
+\item 
+def {\bf add\_\-representer}
+\item 
+def {\bf add\_\-multi\_\-representer}
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{_yaml_@{\_\-yaml\_\-}!add_constructor@{add\_\-constructor}}
+\index{add_constructor@{add\_\-constructor}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-constructor ( {\em tag},  {\em constructor},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___9a669f9086a360c3ce8b90cae38eb9fc}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add a constructor for the given tag.
+Constructor is a function that accepts a Loader instance
+and a node object and produces the corresponding Python object.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 216 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!add_implicit_resolver@{add\_\-implicit\_\-resolver}}
+\index{add_implicit_resolver@{add\_\-implicit\_\-resolver}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-implicit\_\-resolver ( {\em tag},  {\em regexp},  {\em first} = {\tt None},  {\em Loader} = {\tt Loader},  {\em Dumper} = {\tt Dumper})}\label{namespace__yaml___0ffb5c019ecd10cc222483816dae900d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add an implicit scalar detector.
+If an implicit scalar value matches the given regexp,
+the corresponding tag is assigned to the scalar.
+first is a sequence of possible initial characters or None.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 195 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!add_multi_constructor@{add\_\-multi\_\-constructor}}
+\index{add_multi_constructor@{add\_\-multi\_\-constructor}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-multi\_\-constructor ( {\em tag\_\-prefix},  {\em multi\_\-constructor},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___7a2e6be75a9198f845937d87286b0da9}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add a multi-constructor for the given tag prefix.
+Multi-constructor is called for a node if its tag starts with tag_prefix.
+Multi-constructor accepts a Loader instance, a tag suffix,
+and a node object and produces the corresponding Python object.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 224 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!add_multi_representer@{add\_\-multi\_\-representer}}
+\index{add_multi_representer@{add\_\-multi\_\-representer}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-multi\_\-representer ( {\em data\_\-type},  {\em multi\_\-representer},  {\em Dumper} = {\tt Dumper})}\label{namespace__yaml___e67e1444465faeec7391f8a97866456d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add a representer for the given type.
+Multi-representer is a function accepting a Dumper instance
+and an instance of the given data type or subtype
+and producing the corresponding representation node.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 242 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!add_path_resolver@{add\_\-path\_\-resolver}}
+\index{add_path_resolver@{add\_\-path\_\-resolver}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-path\_\-resolver ( {\em tag},  {\em path},  {\em kind} = {\tt None},  {\em Loader} = {\tt Loader},  {\em Dumper} = {\tt Dumper})}\label{namespace__yaml___ec997966bed2b1e44d68ce87474025ed}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add a path based resolver for the given tag.
+A path is a list of keys that forms a path
+to a node in the representation tree.
+Keys can be string values, integers, or None.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 206 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!add_representer@{add\_\-representer}}
+\index{add_representer@{add\_\-representer}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::add\_\-representer ( {\em data\_\-type},  {\em representer},  {\em Dumper} = {\tt Dumper})}\label{namespace__yaml___64c128d4086f49f0c9e1c9a866a1194d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Add a representer for the given type.
+Representer is a function accepting a Dumper instance
+and an instance of the given data type
+and producing the corresponding representation node.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 233 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!compose@{compose}}
+\index{compose@{compose}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::compose ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___aec1a82d2e13d6bd193ee22fed235aef}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse the first YAML document in a stream
+and produce the corresponding representation tree.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 32 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!compose_all@{compose\_\-all}}
+\index{compose_all@{compose\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::compose\_\-all ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___b513f05a01e583b65804da7ca05403d9}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse all YAML documents in a stream
+and produce corresponsing representation trees.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 41 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!dump@{dump}}
+\index{dump@{dump}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::dump ( {\em data},  {\em stream} = {\tt None},  {\em Dumper} = {\tt Dumper},  {\em kwds})}\label{namespace__yaml___0a577516dcc37df2dfb6cb3acf06762d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a Python object into a YAML stream.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 172 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!dump_all@{dump\_\-all}}
+\index{dump_all@{dump\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::dump\_\-all ( {\em documents},  {\em stream} = {\tt None},  {\em Dumper} = {\tt Dumper},  {\em default\_\-style} = {\tt None},  {\em default\_\-flow\_\-style} = {\tt None},  {\em canonical} = {\tt None},  {\em indent} = {\tt None},  {\em width} = {\tt None},  {\em allow\_\-unicode} = {\tt None},  {\em line\_\-break} = {\tt None},  {\em encoding} = {\tt 'utf-8'},  {\em explicit\_\-start} = {\tt None},  {\em explicit\_\-end} = {\tt None},  {\em version} = {\tt None},  {\em tags} = {\tt None})}\label{namespace__yaml___11942e5f83e05f082a77ef383e30d67d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a sequence of Python objects into a YAML stream.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 141 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!emit@{emit}}
+\index{emit@{emit}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::emit ( {\em events},  {\em stream} = {\tt None},  {\em Dumper} = {\tt Dumper},  {\em canonical} = {\tt None},  {\em indent} = {\tt None},  {\em width} = {\tt None},  {\em allow\_\-unicode} = {\tt None},  {\em line\_\-break} = {\tt None})}\label{namespace__yaml___d6ef975a53ceb3baefc0061770ac93e9}
+
+
+
+
+\footnotesize\begin{verbatim}
+Emit YAML parsing events into a stream.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 84 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!load@{load}}
+\index{load@{load}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::load ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___51adc825e36a32baf5370741d919ad80}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse the first YAML document in a stream
+and produce the corresponding Python object.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 59 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!load_all@{load\_\-all}}
+\index{load_all@{load\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::load\_\-all ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___bfe5eeaa793fcfd44ebe9ab591228dc7}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse all YAML documents in a stream
+and produce corresponding Python objects.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 50 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!parse@{parse}}
+\index{parse@{parse}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::parse ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___1e3638cb63e4349eb73eaf0a0dd74792}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse a YAML stream and produce parsing events.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 24 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!safe_dump@{safe\_\-dump}}
+\index{safe_dump@{safe\_\-dump}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::safe\_\-dump ( {\em data},  {\em stream} = {\tt None},  {\em kwds})}\label{namespace__yaml___a83bb1b4e301837ab175950cd0f19c1f}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a Python object into a YAML stream.
+Produce only basic YAML tags.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 187 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!safe_dump_all@{safe\_\-dump\_\-all}}
+\index{safe_dump_all@{safe\_\-dump\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::safe\_\-dump\_\-all ( {\em documents},  {\em stream} = {\tt None},  {\em kwds})}\label{namespace__yaml___ff09869491eeb74f6e49b551326947b3}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a sequence of Python objects into a YAML stream.
+Produce only basic YAML tags.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 179 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!safe_load@{safe\_\-load}}
+\index{safe_load@{safe\_\-load}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::safe\_\-load ( {\em stream})}\label{namespace__yaml___9ee5536ba3f1d9d6322ccb2792620273}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse the first YAML document in a stream
+and produce the corresponding Python object.
+Resolve only basic YAML tags.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 76 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!safe_load_all@{safe\_\-load\_\-all}}
+\index{safe_load_all@{safe\_\-load\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::safe\_\-load\_\-all ( {\em stream})}\label{namespace__yaml___e08ef18d41e4428e42d9afa2347e1073}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse all YAML documents in a stream
+and produce corresponding Python objects.
+Resolve only basic YAML tags.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 68 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!scan@{scan}}
+\index{scan@{scan}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scan ( {\em stream},  {\em Loader} = {\tt Loader})}\label{namespace__yaml___53c97e8db9a9cbf49b8113abd0e83758}
+
+
+
+
+\footnotesize\begin{verbatim}
+Scan a YAML stream and produce scanning tokens.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 16 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!serialize@{serialize}}
+\index{serialize@{serialize}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serialize ( {\em node},  {\em stream} = {\tt None},  {\em Dumper} = {\tt Dumper},  {\em kwds})}\label{namespace__yaml___bc9d9c4b537c5407197add90377c78da}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a representation tree into a YAML stream.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 134 of file \_\-\_\-init\_\-\_\-.py.\index{_yaml_@{\_\-yaml\_\-}!serialize_all@{serialize\_\-all}}
+\index{serialize_all@{serialize\_\-all}!_yaml_@{\_\-yaml\_\-}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::serialize\_\-all ( {\em nodes},  {\em stream} = {\tt None},  {\em Dumper} = {\tt Dumper},  {\em canonical} = {\tt None},  {\em indent} = {\tt None},  {\em width} = {\tt None},  {\em allow\_\-unicode} = {\tt None},  {\em line\_\-break} = {\tt None},  {\em encoding} = {\tt 'utf-8'},  {\em explicit\_\-start} = {\tt None},  {\em explicit\_\-end} = {\tt None},  {\em version} = {\tt None},  {\em tags} = {\tt None})}\label{namespace__yaml___5b3046dc8ac87ec7e4aa1b6769904108}
+
+
+
+
+\footnotesize\begin{verbatim}
+Serialize a sequence of representation trees into a YAML stream.
+If stream is None, return the produced string instead.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 106 of file \_\-\_\-init\_\-\_\-.py.

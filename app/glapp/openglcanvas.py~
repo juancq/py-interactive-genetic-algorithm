@@ -1,0 +1,113 @@
+from wx.glcanvas import GLCanvas
+import wx
+from OpenGL.GLUT import *
+from OpenGL.GLU import *
+from OpenGL.GL import *
+init = 0
+
+class IGAGLCanvas(GLCanvas):
+    def __init__(self, parent, data, color = [1.0,0.,0.,1.]):
+	GLCanvas.__init__(self, parent, size=(250,250))
+	wx.EVT_PAINT(self, self.OnPaint)
+        self.color = color
+        wx.EVT_CHAR(self, self.OnKey)
+
+        self.Bind(wx.EVT_SIZE, self.processSizeEvent, self)
+        self.data = data
+
+        self.zOffset = 0.
+
+
+#------------------------------------------#
+    def OnKey(self, event):
+        keycode = chr(event.GetKeyCode())
+        if keycode == 'j':
+            pass
+        elif keycode == 'k':
+            pass
+        elif keycode == 'z':
+            self.zOffset += 1.0
+
+        self.Refresh()
+        event.Skip()
+
+#------------------------------------------#
+    def OnPaint(self,event):
+	dc = wx.PaintDC(self)
+	self.SetCurrent()
+        global init
+	if not init:
+	    self.InitGL()
+	    self.init = 1
+	self.OnDraw()
+
+
+#------------------------------------------#
+    def OnReshape(self, width, height):
+        """Reshape the OpenGL viewport based on the dimensions of the window."""
+        glViewport(0, 0, width, height)
+        glMatrixMode(GL_PROJECTION)
+        glLoadIdentity()
+        gluPerspective(40.0, float(width)/height, 0.1, 30.0)
+
+    
+#------------------------------------------#
+    def GetGLExtents(self):
+        """Get the extents of the OpenGL canvas."""
+        return self.GetClientSize()
+
+#------------------------------------------#
+    def processSizeEvent(self, event):
+        """Process the resize event.""" 
+        if self.GetContext():
+            # Make sure the frame is shown before calling SetCurrent.
+            self.Show()
+            self.SetCurrent()
+            
+            size = self.GetGLExtents()
+            self.OnReshape(size.width, size.height)
+            self.Refresh(False)
+        event.Skip()
+
+
+#------------------------------------------#
+    def OnDraw(self):
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+        glPushMatrix()
+	glMaterialfv(GL_FRONT,GL_DIFFUSE,self.color)
+        glBegin(GL_POINTS)
+
+        for pt in xrange(int(self.data)):
+            glVertex( pt, 0.0, self.zOffset )
+        glEnd()
+	glPopMatrix()
+        self.SwapBuffers()
+
+	
+#------------------------------------------#
+    def InitGL(self):
+        # set viewing projection
+        light_diffuse = [1.0, 1.0, 1.0, 1.0]
+        light_position = [1.0, 1.0, 1.0, 0.0]
+
+        glPointSize(8.0)
+        glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse)
+        glLightfv(GL_LIGHT0, GL_POSITION, light_position)
+
+        glEnable(GL_LIGHTING)
+        glEnable(GL_LIGHT0)
+        glEnable(GL_DEPTH_TEST)
+        glClearColor(0.0, 0.0, 0.0, 1.0)
+        glClearDepth(1.0)
+
+        glMatrixMode(GL_PROJECTION)
+        glLoadIdentity()
+        gluPerspective(40.0, 1.0, 1.0, 30.0)
+
+        glMatrixMode(GL_MODELVIEW)
+        glLoadIdentity()
+        gluLookAt(0.0, 0.0, 10.0,
+                  0.0, 0.0, 0.0,
+                  0.0, 1.0, 0.0)
+
+#------------------------------------------#

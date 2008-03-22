@@ -1,0 +1,287 @@
+\section{app::xulgui::xulglobalcolor::Xulglobalcolor Class Reference}
+\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor}\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf createPop}
+\item 
+def {\bf fitness}
+\item 
+def {\bf scaleFitness}
+\item 
+def {\bf draw}
+\item 
+def {\bf report}
+\item 
+def {\bf test}
+\item 
+def {\bf decode}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf random}
+\item 
+{\bf geneLen}
+\item 
+{\bf bits}
+\item 
+{\bf params}
+\item 
+{\bf gridSize}
+\item 
+{\bf objScaleMax}
+\item 
+{\bf objScaleMin}
+\item 
+{\bf subjMax}
+\item 
+{\bf subjMin}
+\item 
+{\bf subjScaleMax}
+\item 
+{\bf subjScaleMin}
+\item 
+{\bf ELEMENT\_\-NODE}
+\item 
+{\bf uiWidgets}
+\item 
+{\bf maxDist}
+\item 
+{\bf objMax}
+\item 
+{\bf objMin}
+\item 
+{\bf gridLen}
+\item 
+{\bf widgetNum}
+\item 
+{\bf elementNodes}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file xulglobalcolor.py.
+
+\subsection{Member Function Documentation}
+\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::\_\-\_\-init\_\-\_\- ( {\em self},  {\em params},  {\em random})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_b6f5b808b0797a8058c0addbc260080f}
+
+
+
+
+Definition at line 9 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!createPop@{createPop}}
+\index{createPop@{createPop}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::createPop ( {\em self},  {\em popsize})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_784e9101e1bf578b5a8d9f75313bd7f9}
+
+
+
+
+Definition at line 24 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!fitness@{fitness}}
+\index{fitness@{fitness}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::fitness ( {\em self},  {\em ind},  {\em user\_\-feedback})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_03e266c082a6001e0ec0f7b48421a61e}
+
+
+
+
+\footnotesize\begin{verbatim}
+Compute fitness.
+user_feedback is [best,worst]
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 95 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!scaleFitness@{scaleFitness}}
+\index{scaleFitness@{scaleFitness}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::scaleFitness ( {\em self},  {\em pop})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_92d08633462e87b779506ffaef921b25}
+
+
+
+
+Definition at line 139 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!draw@{draw}}
+\index{draw@{draw}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::draw ( {\em self},  {\em parentPanel},  {\em subset},  {\em population})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_fe7f1607f050f9f5d1a127fdee7120f4}
+
+
+
+
+\footnotesize\begin{verbatim}
+Return a list of panels to be displayed to the user for evaluation.
+Use the arg parentPanel as the parent for each of the panels created.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 143 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!report@{report}}
+\index{report@{report}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::report ( {\em self},  {\em pop},  {\em gen})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_66771359c8f9c45ba8cc1d28b484e513}
+
+
+
+
+Definition at line 159 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!test@{test}}
+\index{test@{test}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::test ( {\em self},  {\em pop})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_e34f757b9f86c30e97f2b26af08fb3c3}
+
+
+
+
+Definition at line 172 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!decode@{decode}}
+\index{decode@{decode}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulglobalcolor::Xulglobalcolor::decode ( {\em self},  {\em chromosome})}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_9a346438efdd09c1c8fcdd4e33a69a19}
+
+
+
+
+\footnotesize\begin{verbatim}
+Decodes the chromosome from binary to decimals or floats, or whatever it may be.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 176 of file xulglobalcolor.py.
+
+\subsection{Member Data Documentation}
+\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!random@{random}}
+\index{random@{random}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::random}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_8e783b8b014aeb19c8d4b299856ce148}
+
+
+
+
+Definition at line 10 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!geneLen@{geneLen}}
+\index{geneLen@{geneLen}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::geneLen}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_394786b9afe1872e1d4bf726b493deb1}
+
+
+
+
+Definition at line 11 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!bits@{bits}}
+\index{bits@{bits}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::bits}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_41242aa0f38f5aff4aa6817eb02d3566}
+
+
+
+
+Definition at line 12 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!params@{params}}
+\index{params@{params}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::params}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_1d860e158c4513ab94286ec4f4684f2d}
+
+
+
+
+Definition at line 13 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!gridSize@{gridSize}}
+\index{gridSize@{gridSize}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::gridSize}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_d4f89a85b5e02974007376ca97960f80}
+
+
+
+
+Definition at line 15 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!objScaleMax@{objScaleMax}}
+\index{objScaleMax@{objScaleMax}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::objScaleMax}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_9100e3a0ac905a4efd8932ce66e6234e}
+
+
+
+
+Definition at line 17 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!objScaleMin@{objScaleMin}}
+\index{objScaleMin@{objScaleMin}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::objScaleMin}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_e6d540d81dd66ab3e9cefd85aec13981}
+
+
+
+
+Definition at line 18 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!subjMax@{subjMax}}
+\index{subjMax@{subjMax}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::subjMax}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_0af8a4dc233805fc1f4b57473ef39ea3}
+
+
+
+
+Definition at line 19 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!subjMin@{subjMin}}
+\index{subjMin@{subjMin}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::subjMin}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_db446a3e05a499bba971e2fcf017a18f}
+
+
+
+
+Definition at line 20 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!subjScaleMax@{subjScaleMax}}
+\index{subjScaleMax@{subjScaleMax}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::subjScaleMax}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_e88ef1db63a4e430209d9bfd6dd485e2}
+
+
+
+
+Definition at line 21 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!subjScaleMin@{subjScaleMin}}
+\index{subjScaleMin@{subjScaleMin}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::subjScaleMin}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_161bd045510cd4799d5f26e647be37b9}
+
+
+
+
+Definition at line 22 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!ELEMENT_NODE@{ELEMENT\_\-NODE}}
+\index{ELEMENT_NODE@{ELEMENT\_\-NODE}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::ELEMENT\_\-NODE}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_505e66258c70359c78eb9f4e50cc1218}
+
+
+
+
+Definition at line 34 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!uiWidgets@{uiWidgets}}
+\index{uiWidgets@{uiWidgets}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::uiWidgets}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_83f842a49d32b39c37323245e9b5b65a}
+
+
+
+
+Definition at line 58 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!maxDist@{maxDist}}
+\index{maxDist@{maxDist}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::maxDist}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_2158540bf802865fe87c92dc66ed515e}
+
+
+
+
+Definition at line 63 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!objMax@{objMax}}
+\index{objMax@{objMax}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::objMax}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_2de14c0ec136ac09ea5601b7a4a02e74}
+
+
+
+
+Definition at line 66 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!objMin@{objMin}}
+\index{objMin@{objMin}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::objMin}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_9f7da7a4c17aacffa170488b277c1b46}
+
+
+
+
+Definition at line 67 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!gridLen@{gridLen}}
+\index{gridLen@{gridLen}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::gridLen}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_2ce89714eeb96215e13f8ca1387bb748}
+
+
+
+
+Definition at line 72 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!widgetNum@{widgetNum}}
+\index{widgetNum@{widgetNum}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::widgetNum}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_a130f263cc42e117972ce6fe3849c225}
+
+
+
+
+Definition at line 83 of file xulglobalcolor.py.\index{app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}!elementNodes@{elementNodes}}
+\index{elementNodes@{elementNodes}!app::xulgui::xulglobalcolor::Xulglobalcolor@{app::xulgui::xulglobalcolor::Xulglobalcolor}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulglobalcolor::Xulglobalcolor::elementNodes}}\label{classapp_1_1xulgui_1_1xulglobalcolor_1_1Xulglobalcolor_3775d6be7b5c8043705a33ddc88c82dd}
+
+
+
+
+Definition at line 84 of file xulglobalcolor.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/xulgui/{\bf xulglobalcolor.py}\end{CompactItemize}

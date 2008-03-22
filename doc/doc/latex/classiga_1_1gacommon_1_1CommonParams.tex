@@ -1,0 +1,305 @@
+\section{iga::gacommon::CommonParams Class Reference}
+\label{classiga_1_1gacommon_1_1CommonParams}\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf getYaml}
+\item 
+def {\bf fileArgs}
+\item 
+def {\bf exit}
+\item 
+def {\bf pingPeers}
+\item 
+def {\bf getGARates}
+\item 
+def {\bf setVar}
+\item 
+def {\bf setVars}
+\item 
+def {\bf getVar}
+\item 
+def {\bf getVars}
+\item 
+def {\bf setArgs}
+\item 
+def {\bf consoleGA}
+\item 
+def {\bf step}
+\item 
+def {\bf onRun}
+\item 
+def {\bf draw}
+\item 
+def {\bf getNGenomes}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf ga}
+\item 
+{\bf params}
+\item 
+{\bf peer\_\-list}
+\item 
+{\bf server\_\-thread}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\footnotesize\begin{verbatim}
+Holder for shared variables.
+The variables are set and modified by the GUI.
+The vars are retrieved by the GA.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 51 of file gacommon.py.
+
+\subsection{Member Function Documentation}
+\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::\_\-\_\-init\_\-\_\- ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_d32e141ac8a18d646558811598b5a608}
+
+
+
+
+Definition at line 58 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!getYaml@{getYaml}}
+\index{getYaml@{getYaml}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::getYaml ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_10774435a719c938a8894397aec681d1}
+
+
+
+
+Definition at line 67 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!fileArgs@{fileArgs}}
+\index{fileArgs@{fileArgs}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::fileArgs ( {\em self},  {\em yaml\_\-file})}\label{classiga_1_1gacommon_1_1CommonParams_189fc40e6d2489c9cb29e47f5f732de2}
+
+
+
+
+\footnotesize\begin{verbatim}
+Parse config files.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 76 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!exit@{exit}}
+\index{exit@{exit}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::exit ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_f813f7ddd0bfe0c749e01e03f9c715e2}
+
+
+
+
+\footnotesize\begin{verbatim}
+Kill running server.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 118 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!pingPeers@{pingPeers}}
+\index{pingPeers@{pingPeers}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::pingPeers ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_474449103b92f011fb2a2a0fd4c1c2b3}
+
+
+
+
+\footnotesize\begin{verbatim}
+Create connections to each peer.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 139 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!getGARates@{getGARates}}
+\index{getGARates@{getGARates}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::getGARates ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_a85870e30bbd939451947a62342e8bed}
+
+
+
+
+\footnotesize\begin{verbatim}
+Get crossover and mutation rates.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 156 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!setVar@{setVar}}
+\index{setVar@{setVar}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::setVar ( {\em self},  {\em name},  {\em value})}\label{classiga_1_1gacommon_1_1CommonParams_55dffa51b02ac8c199d527d9d2ba9c90}
+
+
+
+
+\footnotesize\begin{verbatim}
+Set variable in the attributes dictionary, or create new if var doesn't exist.
+directly.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 163 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!setVars@{setVars}}
+\index{setVars@{setVars}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::setVars ( {\em self},  {\em varNames},  {\em values})}\label{classiga_1_1gacommon_1_1CommonParams_e627ae54a34c4dcc7b3325c987d496d0}
+
+
+
+
+\footnotesize\begin{verbatim}
+Sets variables from list in the attributes dictionary, or create new if var doesn't exist.
+directly.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 179 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!getVar@{getVar}}
+\index{getVar@{getVar}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::getVar ( {\em self},  {\em name})}\label{classiga_1_1gacommon_1_1CommonParams_e7a6fee4a01e9f7525f356c1973ea409}
+
+
+
+
+\footnotesize\begin{verbatim}
+Get variable from the attributes dictionary. To keep from accessing the dictionary
+directly.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 188 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!getVars@{getVars}}
+\index{getVars@{getVars}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::getVars ( {\em self},  {\em varNames})}\label{classiga_1_1gacommon_1_1CommonParams_71ed07bb06684e7221f61dd7fa4b2af9}
+
+
+
+
+\footnotesize\begin{verbatim}
+Get list of variables from the attributes dictionary. To keep from accessing the dictionary
+directly.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 208 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!setArgs@{setArgs}}
+\index{setArgs@{setArgs}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::setArgs ( {\em self},  {\em args})}\label{classiga_1_1gacommon_1_1CommonParams_608db5632cdf4b3b8d23e0d9f56b77be}
+
+
+
+
+\footnotesize\begin{verbatim}
+Update settings based on command line arguments.
+Command line arguments override file defaults.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 224 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!consoleGA@{consoleGA}}
+\index{consoleGA@{consoleGA}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::consoleGA ( {\em self})}\label{classiga_1_1gacommon_1_1CommonParams_d12a76bc5f7fac648214ad898aaa0d38}
+
+
+
+
+\footnotesize\begin{verbatim}
+Run non-interactive GA.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 234 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!step@{step}}
+\index{step@{step}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::step ( {\em self},  {\em user\_\-feedback},  {\em display\_\-panel},  {\em inject\_\-genomes})}\label{classiga_1_1gacommon_1_1CommonParams_95813ad875f6955cbe84fa0fe3d84ecf}
+
+
+
+
+\footnotesize\begin{verbatim}
+Take the user input and the individuals to inject
+and step n generations.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 243 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!onRun@{onRun}}
+\index{onRun@{onRun}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::onRun ( {\em self},  {\em display\_\-panel})}\label{classiga_1_1gacommon_1_1CommonParams_7383f6673e7687124dffaedf1a35f9b3}
+
+
+
+
+\footnotesize\begin{verbatim}
+Called when GA is created.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 252 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!draw@{draw}}
+\index{draw@{draw}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::draw ( {\em self},  {\em parent\_\-panel},  {\em genomes})}\label{classiga_1_1gacommon_1_1CommonParams_e33a52182911436bee817af6b574abb0}
+
+
+
+
+\footnotesize\begin{verbatim}
+Take a list of genomes and have the app file
+create panels for them.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 264 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!getNGenomes@{getNGenomes}}
+\index{getNGenomes@{getNGenomes}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::gacommon::CommonParams::getNGenomes ( {\em self},  {\em genome\_\-num})}\label{classiga_1_1gacommon_1_1CommonParams_eaab737d33f96f8282763eae25354eeb}
+
+
+
+
+\footnotesize\begin{verbatim}
+Used by the peer handler.
+Returns a list of genomes to be displayed
+on the screen of the requesting peer.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 273 of file gacommon.py.
+
+\subsection{Member Data Documentation}
+\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!ga@{ga}}
+\index{ga@{ga}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::gacommon::CommonParams::ga}}\label{classiga_1_1gacommon_1_1CommonParams_158b7eaddb2f227191ccb9616fdb53cc}
+
+
+
+
+Definition at line 60 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!params@{params}}
+\index{params@{params}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::gacommon::CommonParams::params}}\label{classiga_1_1gacommon_1_1CommonParams_abba3fb5ef35fb86b1ca91a96d27b7a9}
+
+
+
+
+Definition at line 61 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!peer_list@{peer\_\-list}}
+\index{peer_list@{peer\_\-list}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::gacommon::CommonParams::peer\_\-list}}\label{classiga_1_1gacommon_1_1CommonParams_ebfa6aa80fbc1bcddf97834bbf120b78}
+
+
+
+
+Definition at line 62 of file gacommon.py.\index{iga::gacommon::CommonParams@{iga::gacommon::CommonParams}!server_thread@{server\_\-thread}}
+\index{server_thread@{server\_\-thread}!iga::gacommon::CommonParams@{iga::gacommon::CommonParams}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf iga::gacommon::CommonParams::server\_\-thread}}\label{classiga_1_1gacommon_1_1CommonParams_e7c937c562abbb89252f992e22dff4e1}
+
+
+
+
+Definition at line 63 of file gacommon.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/iga/{\bf gacommon.py}\end{CompactItemize}

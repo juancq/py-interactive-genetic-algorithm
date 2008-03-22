@@ -1,0 +1,232 @@
+\section{app::app::Application Class Reference}
+\label{classapp_1_1app_1_1Application}\index{app::app::Application@{app::app::Application}}
+Inheritance diagram for app::app::Application:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classapp_1_1app_1_1Application__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf createPop}
+\item 
+def {\bf decode}
+\item 
+def {\bf fitness}
+\item 
+def {\bf scaleFitness}
+\item 
+def {\bf draw}
+\item 
+def {\bf report}
+\item 
+def {\bf test}
+\item 
+def {\bf preFitnessEval}
+\item 
+def {\bf postFitnessEval}
+\item 
+def {\bf paramSpace}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf random}
+\item 
+{\bf params}
+\item 
+{\bf attr}
+\item 
+{\bf geneLen}
+\item 
+{\bf fb}
+\item 
+{\bf fpop}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file app.py.
+
+\subsection{Member Function Documentation}
+\index{app::app::Application@{app::app::Application}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::\_\-\_\-init\_\-\_\- ( {\em self},  {\em params},  {\em random})}\label{classapp_1_1app_1_1Application_a99bf0fb9946c256ad79aa857d3778ef}
+
+
+
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_a3e2f128527ceeebc0f7371e9db418a4}, {\bf app::frogger::frogger::Frogger} \doxyref{}{p.}{classapp_1_1frogger_1_1frogger_1_1Frogger_8c635dcc17861bdd2025c4000fdc14f1}, {\bf app::funcopt::funcopt::Funcopt} \doxyref{}{p.}{classapp_1_1funcopt_1_1funcopt_1_1Funcopt_9a3a42923fe23578f3a0a5bb8c760d7f}, {\bf app::glapp::glapp::Glapp} \doxyref{}{p.}{classapp_1_1glapp_1_1glapp_1_1Glapp_44dce17ba46b5d3b9b28420788cdd3ff}, {\bf app::mesh::mesh::Mesh} \doxyref{}{p.}{classapp_1_1mesh_1_1mesh_1_1Mesh_8485175089d99fad3a5c8d23b9ca28d6}, {\bf app::test::test::Test} \doxyref{}{p.}{classapp_1_1test_1_1test_1_1Test_e904379586380ba9fee0dd017aeeaee3}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_a91d2ea541ff6080600a22fd8cabdd3f}.
+
+Definition at line 8 of file app.py.\index{app::app::Application@{app::app::Application}!createPop@{createPop}}
+\index{createPop@{createPop}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::createPop ( {\em self},  {\em popsize})}\label{classapp_1_1app_1_1Application_f5fdccef71b1b0dcc961be5441ee46fe}
+
+
+
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_5a7de25607ad37f80bf6e768dffa3915}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_94b2d06454f68ef60e48ac1429385708}.
+
+Definition at line 50 of file app.py.\index{app::app::Application@{app::app::Application}!decode@{decode}}
+\index{decode@{decode}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::decode ( {\em self},  {\em chrom})}\label{classapp_1_1app_1_1Application_033677103afd5ebb19ccaefdf181033d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Decode bit string.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented in {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_14bc023abbb187d556990b8198460b20}.
+
+Definition at line 55 of file app.py.\index{app::app::Application@{app::app::Application}!fitness@{fitness}}
+\index{fitness@{fitness}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::fitness ( {\em self},  {\em ind},  {\em user\_\-feedback})}\label{classapp_1_1app_1_1Application_fdaf1047955ec9e9e7ebca6cadd99ad7}
+
+
+
+
+\footnotesize\begin{verbatim}
+Compute fitness.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_6e9b2b70209c48756db1c8dc72d74a12}, {\bf app::glapp::glapp::Glapp} \doxyref{}{p.}{classapp_1_1glapp_1_1glapp_1_1Glapp_944f95e40f6fe849b579e2eacada1201}, {\bf app::mesh::mesh::Mesh} \doxyref{}{p.}{classapp_1_1mesh_1_1mesh_1_1Mesh_5487decb5d4f0f40a7b9c067fb178aa4}, {\bf app::test::test::Test} \doxyref{}{p.}{classapp_1_1test_1_1test_1_1Test_9522601338ed46d124846d7927ad5982}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_3a21862aea4e70ec703e9fb71336aa78}.
+
+Definition at line 76 of file app.py.\index{app::app::Application@{app::app::Application}!scaleFitness@{scaleFitness}}
+\index{scaleFitness@{scaleFitness}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::scaleFitness ( {\em self},  {\em pop})}\label{classapp_1_1app_1_1Application_21de4e377a3ae6764a0941b7f59ad17f}
+
+
+
+
+Definition at line 83 of file app.py.\index{app::app::Application@{app::app::Application}!draw@{draw}}
+\index{draw@{draw}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::draw ( {\em self},  {\em parentPanel},  {\em subset})}\label{classapp_1_1app_1_1Application_0c9aa98679040c294dc8f0136dee3d35}
+
+
+
+
+\footnotesize\begin{verbatim}
+Return a list of panels to be displayed to the user for evaluation.
+Use the arg parentPanel as the parent for each of the panels created.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_1abdfe49ea3ab5b87fc371c2e053fd44}, {\bf app::frogger::frogger::Frogger} \doxyref{}{p.}{classapp_1_1frogger_1_1frogger_1_1Frogger_d2b2062b8be542e1b7d7668c9e8b79eb}, {\bf app::glapp::glapp::Glapp} \doxyref{}{p.}{classapp_1_1glapp_1_1glapp_1_1Glapp_2f35a1c1706fb9a0a931fdb5346d30d9}, {\bf app::mesh::mesh::Mesh} \doxyref{}{p.}{classapp_1_1mesh_1_1mesh_1_1Mesh_3283e538e731218539ba573e3f6a5fd6}, {\bf app::test::test::Test} \doxyref{}{p.}{classapp_1_1test_1_1test_1_1Test_7ba0a26b079882d8e5ba4e5a61c4d356}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_a55a599a909c9bdfb34754adf1967530}.
+
+Definition at line 88 of file app.py.\index{app::app::Application@{app::app::Application}!report@{report}}
+\index{report@{report}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::report ( {\em self},  {\em pop},  {\em gen})}\label{classapp_1_1app_1_1Application_96af711c993591e0879e01ba1412a415}
+
+
+
+
+\footnotesize\begin{verbatim}
+Write to console or file
+population statistics.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented in {\bf app::funcopt::funcopt::Funcopt} \doxyref{}{p.}{classapp_1_1funcopt_1_1funcopt_1_1Funcopt_bd1a4c864ee829802faa32843e004fe1}, {\bf app::glapp::glapp::Glapp} \doxyref{}{p.}{classapp_1_1glapp_1_1glapp_1_1Glapp_a2ba6a78352624a77c9cbe8724bd4004}, {\bf app::mesh::mesh::Mesh} \doxyref{}{p.}{classapp_1_1mesh_1_1mesh_1_1Mesh_5e3cff3e973e83a5ca2a776275f45af2}, {\bf app::test::test::Test} \doxyref{}{p.}{classapp_1_1test_1_1test_1_1Test_cb4c83ca846ee916ba52c97f9a60173f}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_1d519d35509181411f0f6b0515b861a1}.
+
+Definition at line 99 of file app.py.\index{app::app::Application@{app::app::Application}!test@{test}}
+\index{test@{test}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::test ( {\em self},  {\em pop})}\label{classapp_1_1app_1_1Application_f47b8430213043fb65c9dab5d91a3b9e}
+
+
+
+
+Reimplemented in {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_560be00343c599aba242fc0a5bd4e529}.
+
+Definition at line 135 of file app.py.\index{app::app::Application@{app::app::Application}!preFitnessEval@{preFitnessEval}}
+\index{preFitnessEval@{preFitnessEval}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::preFitnessEval ( {\em self},  {\em pop},  {\em gen})}\label{classapp_1_1app_1_1Application_a4116811a1b11a7ee84a77201e6c28e4}
+
+
+
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_5e37ec5574eed787ab289823b274702f}.
+
+Definition at line 140 of file app.py.\index{app::app::Application@{app::app::Application}!postFitnessEval@{postFitnessEval}}
+\index{postFitnessEval@{postFitnessEval}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::postFitnessEval ( {\em self},  {\em pop},  {\em gen})}\label{classapp_1_1app_1_1Application_c4555cdb8cd37c547564070310ab9c3f}
+
+
+
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_54b8fd73918a439df3ee928af7eb8acb}.
+
+Definition at line 144 of file app.py.\index{app::app::Application@{app::app::Application}!paramSpace@{paramSpace}}
+\index{paramSpace@{paramSpace}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::app::Application::paramSpace ( {\em self},  {\em pop},  {\em user\_\-selected})}\label{classapp_1_1app_1_1Application_fc0f18765741627358a3f4a814652cf5}
+
+
+
+
+Reimplemented in {\bf app::floorplanner::floorplanner::Floorplanner} \doxyref{}{p.}{classapp_1_1floorplanner_1_1floorplanner_1_1Floorplanner_52ff6df03f77835be4f213f5a5972457}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_27644dd2b08e145fd3b0608ba4b8fc7b}.
+
+Definition at line 148 of file app.py.
+
+\subsection{Member Data Documentation}
+\index{app::app::Application@{app::app::Application}!random@{random}}
+\index{random@{random}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::random}}\label{classapp_1_1app_1_1Application_3de88a82dc165a2cbabf50fb0a048a09}
+
+
+
+
+Definition at line 9 of file app.py.\index{app::app::Application@{app::app::Application}!params@{params}}
+\index{params@{params}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::params}}\label{classapp_1_1app_1_1Application_6ef238b503f824cb3412a178d914764b}
+
+
+
+
+Definition at line 10 of file app.py.\index{app::app::Application@{app::app::Application}!attr@{attr}}
+\index{attr@{attr}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::attr}}\label{classapp_1_1app_1_1Application_a9aec657bcccc394e4d6f843ec6e0fe1}
+
+
+
+
+Definition at line 27 of file app.py.\index{app::app::Application@{app::app::Application}!geneLen@{geneLen}}
+\index{geneLen@{geneLen}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::geneLen}}\label{classapp_1_1app_1_1Application_85324e1c7283fe857ad9234bc970400b}
+
+
+
+
+Reimplemented in {\bf app::frogger::frogger::Frogger} \doxyref{}{p.}{classapp_1_1frogger_1_1frogger_1_1Frogger_6195a2ce7a40963306e7d192122a46cf}, {\bf app::test::test::Test} \doxyref{}{p.}{classapp_1_1test_1_1test_1_1Test_4136c53eea0591c1470af993804f998c}, and {\bf app::xulgui::xulgui::Xulgui} \doxyref{}{p.}{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_5d7367dc13fecf98cb0459e5f909429b}.
+
+Definition at line 28 of file app.py.\index{app::app::Application@{app::app::Application}!fb@{fb}}
+\index{fb@{fb}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::fb}}\label{classapp_1_1app_1_1Application_e3ce164db53151466638e90a99845521}
+
+
+
+
+Definition at line 38 of file app.py.\index{app::app::Application@{app::app::Application}!fpop@{fpop}}
+\index{fpop@{fpop}!app::app::Application@{app::app::Application}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::app::Application::fpop}}\label{classapp_1_1app_1_1Application_1f1cef36e22f2861738f9ea9ba2a73f8}
+
+
+
+
+Definition at line 42 of file app.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/{\bf app.py}\end{CompactItemize}

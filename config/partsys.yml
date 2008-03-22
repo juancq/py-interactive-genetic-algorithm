@@ -1,0 +1,36 @@
+inherits: [iga.yml]
+numgen: 50
+stepSize: 1
+expand: True
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 1
+crossover:
+  type: simple
+  prob: 0.7
+  points: 1
+mutation:
+  type: simple
+  prob: 0.01
+application:
+  name: partsys
+  size: (450,450)
+  tick: 1
+  vars:
+    v1x: 
+        max: 2
+        min: -2
+        scale: .1
+    v1y: 
+        max: 2
+        min: -2
+        scale: .1
+    v1z: 
+        max: 2
+        min: -2
+        scale: .1

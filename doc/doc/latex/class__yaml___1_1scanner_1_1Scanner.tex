@@ -1,0 +1,683 @@
+\section{\_\-yaml\_\-::scanner::Scanner Class Reference}
+\label{class__yaml___1_1scanner_1_1Scanner}\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+Inheritance diagram for \_\-yaml\_\-::scanner::Scanner:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class__yaml___1_1scanner_1_1Scanner__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf check\_\-token}
+\item 
+def {\bf peek\_\-token}
+\item 
+def {\bf get\_\-token}
+\item 
+def {\bf need\_\-more\_\-tokens}
+\item 
+def {\bf fetch\_\-more\_\-tokens}
+\item 
+def {\bf next\_\-possible\_\-simple\_\-key}
+\item 
+def {\bf stale\_\-possible\_\-simple\_\-keys}
+\item 
+def {\bf save\_\-possible\_\-simple\_\-key}
+\item 
+def {\bf remove\_\-possible\_\-simple\_\-key}
+\item 
+def {\bf unwind\_\-indent}
+\item 
+def {\bf add\_\-indent}
+\item 
+def {\bf fetch\_\-stream\_\-start}
+\item 
+def {\bf fetch\_\-stream\_\-end}
+\item 
+def {\bf fetch\_\-directive}
+\item 
+def {\bf fetch\_\-document\_\-start}
+\item 
+def {\bf fetch\_\-document\_\-end}
+\item 
+def {\bf fetch\_\-document\_\-indicator}
+\item 
+def {\bf fetch\_\-flow\_\-sequence\_\-start}
+\item 
+def {\bf fetch\_\-flow\_\-mapping\_\-start}
+\item 
+def {\bf fetch\_\-flow\_\-collection\_\-start}
+\item 
+def {\bf fetch\_\-flow\_\-sequence\_\-end}
+\item 
+def {\bf fetch\_\-flow\_\-mapping\_\-end}
+\item 
+def {\bf fetch\_\-flow\_\-collection\_\-end}
+\item 
+def {\bf fetch\_\-flow\_\-entry}
+\item 
+def {\bf fetch\_\-block\_\-entry}
+\item 
+def {\bf fetch\_\-key}
+\item 
+def {\bf fetch\_\-value}
+\item 
+def {\bf fetch\_\-alias}
+\item 
+def {\bf fetch\_\-anchor}
+\item 
+def {\bf fetch\_\-tag}
+\item 
+def {\bf fetch\_\-literal}
+\item 
+def {\bf fetch\_\-folded}
+\item 
+def {\bf fetch\_\-block\_\-scalar}
+\item 
+def {\bf fetch\_\-single}
+\item 
+def {\bf fetch\_\-double}
+\item 
+def {\bf fetch\_\-flow\_\-scalar}
+\item 
+def {\bf fetch\_\-plain}
+\item 
+def {\bf check\_\-directive}
+\item 
+def {\bf check\_\-document\_\-start}
+\item 
+def {\bf check\_\-document\_\-end}
+\item 
+def {\bf check\_\-block\_\-entry}
+\item 
+def {\bf check\_\-key}
+\item 
+def {\bf check\_\-value}
+\item 
+def {\bf check\_\-plain}
+\item 
+def {\bf scan\_\-to\_\-next\_\-token}
+\item 
+def {\bf scan\_\-directive}
+\item 
+def {\bf scan\_\-directive\_\-name}
+\item 
+def {\bf scan\_\-yaml\_\-directive\_\-value}
+\item 
+def {\bf scan\_\-yaml\_\-directive\_\-number}
+\item 
+def {\bf scan\_\-tag\_\-directive\_\-value}
+\item 
+def {\bf scan\_\-tag\_\-directive\_\-handle}
+\item 
+def {\bf scan\_\-tag\_\-directive\_\-prefix}
+\item 
+def {\bf scan\_\-directive\_\-ignored\_\-line}
+\item 
+def {\bf scan\_\-anchor}
+\item 
+def {\bf scan\_\-tag}
+\item 
+def {\bf scan\_\-block\_\-scalar}
+\item 
+def {\bf scan\_\-block\_\-scalar\_\-indicators}
+\item 
+def {\bf scan\_\-block\_\-scalar\_\-ignored\_\-line}
+\item 
+def {\bf scan\_\-block\_\-scalar\_\-indentation}
+\item 
+def {\bf scan\_\-block\_\-scalar\_\-breaks}
+\item 
+def {\bf scan\_\-flow\_\-scalar}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf done}
+\item 
+{\bf flow\_\-level}
+\item 
+{\bf tokens}
+\item 
+{\bf tokens\_\-taken}
+\item 
+{\bf indent}
+\item 
+{\bf indents}
+\item 
+{\bf allow\_\-simple\_\-key}
+\item 
+{\bf possible\_\-simple\_\-keys}
+\item 
+{\bf column}
+\item 
+{\bf index}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file scanner.py.
+
+\subsection{Member Function Documentation}
+\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::\_\-\_\-init\_\-\_\- ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_d059d90f2541065f53c9f96d78d645ab}
+
+
+
+
+\footnotesize\begin{verbatim}Initialize the scanner.\end{verbatim}
+\normalsize
+ 
+
+Definition at line 48 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_token@{check\_\-token}}
+\index{check_token@{check\_\-token}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-token ( {\em self},  {\em choices})}\label{class__yaml___1_1scanner_1_1Scanner_8c64310195a86b565477358f8e4363c3}
+
+
+
+
+Definition at line 113 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!peek_token@{peek\_\-token}}
+\index{peek_token@{peek\_\-token}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::peek\_\-token ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_4b53e66fed328c533a1ffae09ac7c6f6}
+
+
+
+
+Definition at line 125 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!get_token@{get\_\-token}}
+\index{get_token@{get\_\-token}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::get\_\-token ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_bd6ab4af6f7c1674b7bdd4a704614717}
+
+
+
+
+Definition at line 132 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!need_more_tokens@{need\_\-more\_\-tokens}}
+\index{need_more_tokens@{need\_\-more\_\-tokens}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::need\_\-more\_\-tokens ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_07ed14d2d093769f270c223327fa4899}
+
+
+
+
+Definition at line 142 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_more_tokens@{fetch\_\-more\_\-tokens}}
+\index{fetch_more_tokens@{fetch\_\-more\_\-tokens}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-more\_\-tokens ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_8d092c1b5b571586584a0f2f9e78313d}
+
+
+
+
+Definition at line 153 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!next_possible_simple_key@{next\_\-possible\_\-simple\_\-key}}
+\index{next_possible_simple_key@{next\_\-possible\_\-simple\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::next\_\-possible\_\-simple\_\-key ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_e6c3237fd9b9f84f7e2df0ded8a90fe2}
+
+
+
+
+Definition at line 261 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!stale_possible_simple_keys@{stale\_\-possible\_\-simple\_\-keys}}
+\index{stale_possible_simple_keys@{stale\_\-possible\_\-simple\_\-keys}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::stale\_\-possible\_\-simple\_\-keys ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_db3a107b77ac3961942b967703db858d}
+
+
+
+
+Definition at line 276 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!save_possible_simple_key@{save\_\-possible\_\-simple\_\-key}}
+\index{save_possible_simple_key@{save\_\-possible\_\-simple\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::save\_\-possible\_\-simple\_\-key ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_9abfa11a6770fa2d04a1fcf2cc9ff6c5}
+
+
+
+
+Definition at line 292 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!remove_possible_simple_key@{remove\_\-possible\_\-simple\_\-key}}
+\index{remove_possible_simple_key@{remove\_\-possible\_\-simple\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::remove\_\-possible\_\-simple\_\-key ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_2f9490782280a8c3cf7155cfb6313a52}
+
+
+
+
+Definition at line 313 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!unwind_indent@{unwind\_\-indent}}
+\index{unwind_indent@{unwind\_\-indent}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::unwind\_\-indent ( {\em self},  {\em column})}\label{class__yaml___1_1scanner_1_1Scanner_2d75928b6fefa059c106c2eff779a73a}
+
+
+
+
+Definition at line 326 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!add_indent@{add\_\-indent}}
+\index{add_indent@{add\_\-indent}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::add\_\-indent ( {\em self},  {\em column})}\label{class__yaml___1_1scanner_1_1Scanner_c02af22411e997c8d56bc511814b3f9b}
+
+
+
+
+Definition at line 350 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_stream_start@{fetch\_\-stream\_\-start}}
+\index{fetch_stream_start@{fetch\_\-stream\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-stream\_\-start ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_49e1f874e48ca7d3b97c42239500fa6b}
+
+
+
+
+Definition at line 360 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_stream_end@{fetch\_\-stream\_\-end}}
+\index{fetch_stream_end@{fetch\_\-stream\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-stream\_\-end ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_b67d30c6d4331a888a284b241d87469e}
+
+
+
+
+Definition at line 372 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_directive@{fetch\_\-directive}}
+\index{fetch_directive@{fetch\_\-directive}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-directive ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_136f574f1de91d408e1247b032080255}
+
+
+
+
+Definition at line 390 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_document_start@{fetch\_\-document\_\-start}}
+\index{fetch_document_start@{fetch\_\-document\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-document\_\-start ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_5b5a58e1031917e0da72db75193d2170}
+
+
+
+
+Definition at line 402 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_document_end@{fetch\_\-document\_\-end}}
+\index{fetch_document_end@{fetch\_\-document\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-document\_\-end ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_78ac7ce13e40d3b2ea660cd918f33e17}
+
+
+
+
+Definition at line 405 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_document_indicator@{fetch\_\-document\_\-indicator}}
+\index{fetch_document_indicator@{fetch\_\-document\_\-indicator}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-document\_\-indicator ( {\em self},  {\em TokenClass})}\label{class__yaml___1_1scanner_1_1Scanner_245cb678120ea0a4aa29cf143887ebad}
+
+
+
+
+Definition at line 408 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_sequence_start@{fetch\_\-flow\_\-sequence\_\-start}}
+\index{fetch_flow_sequence_start@{fetch\_\-flow\_\-sequence\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-sequence\_\-start ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_f72cc25a2631cded0331ed67f567f12f}
+
+
+
+
+Definition at line 424 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_mapping_start@{fetch\_\-flow\_\-mapping\_\-start}}
+\index{fetch_flow_mapping_start@{fetch\_\-flow\_\-mapping\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-mapping\_\-start ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_e02210ba84cfd03b6e366798d86b05fa}
+
+
+
+
+Definition at line 427 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_collection_start@{fetch\_\-flow\_\-collection\_\-start}}
+\index{fetch_flow_collection_start@{fetch\_\-flow\_\-collection\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-collection\_\-start ( {\em self},  {\em TokenClass})}\label{class__yaml___1_1scanner_1_1Scanner_81eb1ee195acfa5d987d3453f5b16634}
+
+
+
+
+Definition at line 430 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_sequence_end@{fetch\_\-flow\_\-sequence\_\-end}}
+\index{fetch_flow_sequence_end@{fetch\_\-flow\_\-sequence\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-sequence\_\-end ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_cb9702d72833ef30d2351f69cb027132}
+
+
+
+
+Definition at line 447 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_mapping_end@{fetch\_\-flow\_\-mapping\_\-end}}
+\index{fetch_flow_mapping_end@{fetch\_\-flow\_\-mapping\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-mapping\_\-end ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_12409ce9bfc749d43c3410cc68907c8a}
+
+
+
+
+Definition at line 450 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_collection_end@{fetch\_\-flow\_\-collection\_\-end}}
+\index{fetch_flow_collection_end@{fetch\_\-flow\_\-collection\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-collection\_\-end ( {\em self},  {\em TokenClass})}\label{class__yaml___1_1scanner_1_1Scanner_d885226e1358bc71a7ffeb20472eef50}
+
+
+
+
+Definition at line 453 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_entry@{fetch\_\-flow\_\-entry}}
+\index{fetch_flow_entry@{fetch\_\-flow\_\-entry}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-entry ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_7275e27ef63c89c7d1f445ddc30ff714}
+
+
+
+
+Definition at line 470 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_block_entry@{fetch\_\-block\_\-entry}}
+\index{fetch_block_entry@{fetch\_\-block\_\-entry}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-block\_\-entry ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_656130a67a7ef72d48e51369eb599500}
+
+
+
+
+Definition at line 484 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_key@{fetch\_\-key}}
+\index{fetch_key@{fetch\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-key ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_20344c7d8eb03d05ee95b0a020e5653e}
+
+
+
+
+Definition at line 517 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_value@{fetch\_\-value}}
+\index{fetch_value@{fetch\_\-value}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-value ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_7a7a53ba4b713fe8d95de56f8885b999}
+
+
+
+
+Definition at line 545 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_alias@{fetch\_\-alias}}
+\index{fetch_alias@{fetch\_\-alias}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-alias ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_66bbeb731687b410890742685537c7cd}
+
+
+
+
+Definition at line 601 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_anchor@{fetch\_\-anchor}}
+\index{fetch_anchor@{fetch\_\-anchor}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-anchor ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_13deb75aefb9406fa88eec3b42824bff}
+
+
+
+
+Definition at line 612 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_tag@{fetch\_\-tag}}
+\index{fetch_tag@{fetch\_\-tag}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-tag ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_b5da95897c7184d5dcdc68da87f4468b}
+
+
+
+
+Definition at line 623 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_literal@{fetch\_\-literal}}
+\index{fetch_literal@{fetch\_\-literal}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-literal ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_0246a9959576f11131a02f8ed1297229}
+
+
+
+
+Definition at line 634 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_folded@{fetch\_\-folded}}
+\index{fetch_folded@{fetch\_\-folded}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-folded ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_cd5c799059475bdbf0d0002523417bd4}
+
+
+
+
+Definition at line 637 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_block_scalar@{fetch\_\-block\_\-scalar}}
+\index{fetch_block_scalar@{fetch\_\-block\_\-scalar}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-block\_\-scalar ( {\em self},  {\em style})}\label{class__yaml___1_1scanner_1_1Scanner_0a8779330d8899b1ec826e1e0c27c83d}
+
+
+
+
+Definition at line 640 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_single@{fetch\_\-single}}
+\index{fetch_single@{fetch\_\-single}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-single ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_eca575ba396d239e49cdddfe1435157a}
+
+
+
+
+Definition at line 651 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_double@{fetch\_\-double}}
+\index{fetch_double@{fetch\_\-double}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-double ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_88b101a1140d2f53f6db18fc9908352b}
+
+
+
+
+Definition at line 654 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_flow_scalar@{fetch\_\-flow\_\-scalar}}
+\index{fetch_flow_scalar@{fetch\_\-flow\_\-scalar}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-flow\_\-scalar ( {\em self},  {\em style})}\label{class__yaml___1_1scanner_1_1Scanner_1ef63e5e5b7a9f6ebb0eaddba6d58ae2}
+
+
+
+
+Definition at line 657 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!fetch_plain@{fetch\_\-plain}}
+\index{fetch_plain@{fetch\_\-plain}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::fetch\_\-plain ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_3e54d826f360bba138acd7f7f1c6764b}
+
+
+
+
+Definition at line 668 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_directive@{check\_\-directive}}
+\index{check_directive@{check\_\-directive}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-directive ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_eda0361e9dd5c9db46f84514ee8c34dc}
+
+
+
+
+Definition at line 683 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_document_start@{check\_\-document\_\-start}}
+\index{check_document_start@{check\_\-document\_\-start}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-document\_\-start ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_51e2eaa3ed82d3c5b59246552098bac4}
+
+
+
+
+Definition at line 690 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_document_end@{check\_\-document\_\-end}}
+\index{check_document_end@{check\_\-document\_\-end}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-document\_\-end ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_8719b89827a2fe87967f44f95f965096}
+
+
+
+
+Definition at line 698 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_block_entry@{check\_\-block\_\-entry}}
+\index{check_block_entry@{check\_\-block\_\-entry}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-block\_\-entry ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_9df4d9a3ca6039b5ab9a137775f9bf93}
+
+
+
+
+Definition at line 706 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_key@{check\_\-key}}
+\index{check_key@{check\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-key ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_b1ac2243f4126feafcf0feaae16bf41b}
+
+
+
+
+Definition at line 711 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_value@{check\_\-value}}
+\index{check_value@{check\_\-value}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-value ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_05ad85ec9c0e77f031c622f0dee6164d}
+
+
+
+
+Definition at line 721 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!check_plain@{check\_\-plain}}
+\index{check_plain@{check\_\-plain}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::check\_\-plain ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_ff96a3567b83bd6536b947367d758344}
+
+
+
+
+Definition at line 731 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_to_next_token@{scan\_\-to\_\-next\_\-token}}
+\index{scan_to_next_token@{scan\_\-to\_\-next\_\-token}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-to\_\-next\_\-token ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_fea4d5807f97b3a47895615a8406cd72}
+
+
+
+
+Definition at line 752 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_directive@{scan\_\-directive}}
+\index{scan_directive@{scan\_\-directive}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-directive ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_eae7db2d0740c9ed6f3502b9d6584e36}
+
+
+
+
+Definition at line 787 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_directive_name@{scan\_\-directive\_\-name}}
+\index{scan_directive_name@{scan\_\-directive\_\-name}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-directive\_\-name ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_1078422f1af1685e040b0bdc54260c6c}
+
+
+
+
+Definition at line 806 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_yaml_directive_value@{scan\_\-yaml\_\-directive\_\-value}}
+\index{scan_yaml_directive_value@{scan\_\-yaml\_\-directive\_\-value}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-yaml\_\-directive\_\-value ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_840d49260022788cb4a4fc85579037dd}
+
+
+
+
+Definition at line 827 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_yaml_directive_number@{scan\_\-yaml\_\-directive\_\-number}}
+\index{scan_yaml_directive_number@{scan\_\-yaml\_\-directive\_\-number}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-yaml\_\-directive\_\-number ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_8089fe1a957c9373c9dcd84166f16fbc}
+
+
+
+
+Definition at line 846 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_tag_directive_value@{scan\_\-tag\_\-directive\_\-value}}
+\index{scan_tag_directive_value@{scan\_\-tag\_\-directive\_\-value}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-tag\_\-directive\_\-value ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_dbe2f234c2524c7795f054186b7338c0}
+
+
+
+
+Definition at line 860 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_tag_directive_handle@{scan\_\-tag\_\-directive\_\-handle}}
+\index{scan_tag_directive_handle@{scan\_\-tag\_\-directive\_\-handle}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-tag\_\-directive\_\-handle ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_dc4f53f6012621bde0a267030734a969}
+
+
+
+
+Definition at line 870 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_tag_directive_prefix@{scan\_\-tag\_\-directive\_\-prefix}}
+\index{scan_tag_directive_prefix@{scan\_\-tag\_\-directive\_\-prefix}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-tag\_\-directive\_\-prefix ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_0cb5e53839d510ce4840abf582384b07}
+
+
+
+
+Definition at line 880 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_directive_ignored_line@{scan\_\-directive\_\-ignored\_\-line}}
+\index{scan_directive_ignored_line@{scan\_\-directive\_\-ignored\_\-line}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-directive\_\-ignored\_\-line ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_87c2eb191a6e2c66151ed31664bbbb4a}
+
+
+
+
+Definition at line 890 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_anchor@{scan\_\-anchor}}
+\index{scan_anchor@{scan\_\-anchor}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-anchor ( {\em self},  {\em TokenClass})}\label{class__yaml___1_1scanner_1_1Scanner_d519cb4280d8bc60716cd2583c07e852}
+
+
+
+
+Definition at line 904 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_tag@{scan\_\-tag}}
+\index{scan_tag@{scan\_\-tag}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-tag ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_7837a62ac3a34d011e22b0379a0f0ad5}
+
+
+
+
+Definition at line 940 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_block_scalar@{scan\_\-block\_\-scalar}}
+\index{scan_block_scalar@{scan\_\-block\_\-scalar}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-block\_\-scalar ( {\em self},  {\em style})}\label{class__yaml___1_1scanner_1_1Scanner_230ce608d341bee70001a3a222382df7}
+
+
+
+
+Definition at line 982 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_block_scalar_indicators@{scan\_\-block\_\-scalar\_\-indicators}}
+\index{scan_block_scalar_indicators@{scan\_\-block\_\-scalar\_\-indicators}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-block\_\-scalar\_\-indicators ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_dc3158c2b7153618968a8690f021aecc}
+
+
+
+
+Definition at line 1058 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_block_scalar_ignored_line@{scan\_\-block\_\-scalar\_\-ignored\_\-line}}
+\index{scan_block_scalar_ignored_line@{scan\_\-block\_\-scalar\_\-ignored\_\-line}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-block\_\-scalar\_\-ignored\_\-line ( {\em self},  {\em start\_\-mark})}\label{class__yaml___1_1scanner_1_1Scanner_ecb9b9f45e8ac4356812873cdecf1f18}
+
+
+
+
+Definition at line 1098 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_block_scalar_indentation@{scan\_\-block\_\-scalar\_\-indentation}}
+\index{scan_block_scalar_indentation@{scan\_\-block\_\-scalar\_\-indentation}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-block\_\-scalar\_\-indentation ( {\em self})}\label{class__yaml___1_1scanner_1_1Scanner_ffc3d83a355d47593f1aac2822784002}
+
+
+
+
+Definition at line 1112 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_block_scalar_breaks@{scan\_\-block\_\-scalar\_\-breaks}}
+\index{scan_block_scalar_breaks@{scan\_\-block\_\-scalar\_\-breaks}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-block\_\-scalar\_\-breaks ( {\em self},  {\em indent})}\label{class__yaml___1_1scanner_1_1Scanner_8f5cc56b0a46d6e986e7210dba3a45c2}
+
+
+
+
+Definition at line 1127 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!scan_flow_scalar@{scan\_\-flow\_\-scalar}}
+\index{scan_flow_scalar@{scan\_\-flow\_\-scalar}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def \_\-yaml\_\-::scanner::Scanner::scan\_\-flow\_\-scalar ( {\em self},  {\em style})}\label{class__yaml___1_1scanner_1_1Scanner_f80df1deda0f66ee422a5ebf4d1d74de}
+
+
+
+
+Definition at line 1140 of file scanner.py.
+
+\subsection{Member Data Documentation}
+\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!done@{done}}
+\index{done@{done}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::done}}\label{class__yaml___1_1scanner_1_1Scanner_7928f8738ca968ae673e05248b9cea76}
+
+
+
+
+Definition at line 60 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!flow_level@{flow\_\-level}}
+\index{flow_level@{flow\_\-level}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::flow\_\-level}}\label{class__yaml___1_1scanner_1_1Scanner_1d37ab0273443ec39f8542bc3ee58955}
+
+
+
+
+Definition at line 64 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!tokens@{tokens}}
+\index{tokens@{tokens}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::tokens}}\label{class__yaml___1_1scanner_1_1Scanner_08a5ea78453e86b04245c9dc439b9d3b}
+
+
+
+
+Definition at line 67 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!tokens_taken@{tokens\_\-taken}}
+\index{tokens_taken@{tokens\_\-taken}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::tokens\_\-taken}}\label{class__yaml___1_1scanner_1_1Scanner_5ff3e8f65236d1522817603d99cb1531}
+
+
+
+
+Definition at line 73 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!indent@{indent}}
+\index{indent@{indent}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::indent}}\label{class__yaml___1_1scanner_1_1Scanner_5ed64b2230c2dfe4027e6005929e3d13}
+
+
+In flow context, \doxyref{tokens}{p.}{namespace__yaml___1_1tokens} should respect indentation. Actually the condition should be `self.indent $>$= column` according to the spec. But this condition will prohibit intuitively correct constructions such as key : \{ \} if self.flow\_\-level and self.indent $>$ column: raise \doxyref{ScannerError}{p.}{class__yaml___1_1scanner_1_1ScannerError}(None, None, \char`\"{}invalid intendation or unclosed '[' or '\{'\char`\"{}, self.get\_\-mark()) 
+
+Definition at line 76 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!indents@{indents}}
+\index{indents@{indents}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::indents}}\label{class__yaml___1_1scanner_1_1Scanner_ad3f60e0a7639fa79915793d8547d394}
+
+
+
+
+Definition at line 79 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!allow_simple_key@{allow\_\-simple\_\-key}}
+\index{allow_simple_key@{allow\_\-simple\_\-key}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::allow\_\-simple\_\-key}}\label{class__yaml___1_1scanner_1_1Scanner_c47b18ed6b696c9ddc6e8bb7d888caa0}
+
+
+
+
+Definition at line 101 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!possible_simple_keys@{possible\_\-simple\_\-keys}}
+\index{possible_simple_keys@{possible\_\-simple\_\-keys}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::possible\_\-simple\_\-keys}}\label{class__yaml___1_1scanner_1_1Scanner_8f1129492501e78c507139366f123bc7}
+
+
+
+
+Definition at line 109 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!column@{column}}
+\index{column@{column}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::column}}\label{class__yaml___1_1scanner_1_1Scanner_5b1cd94e6424f6152201c27fea637ff9}
+
+
+
+
+Definition at line 687 of file scanner.py.\index{_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}!index@{index}}
+\index{index@{index}!_yaml_::scanner::Scanner@{\_\-yaml\_\-::scanner::Scanner}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf \_\-yaml\_\-::scanner::Scanner::index}}\label{class__yaml___1_1scanner_1_1Scanner_e5b5c3f5e724b713e52588cda7713ebf}
+
+
+
+
+Definition at line 772 of file scanner.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/\_\-yaml\_\-/{\bf scanner.py}\end{CompactItemize}

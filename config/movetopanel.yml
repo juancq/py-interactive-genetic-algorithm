@@ -1,0 +1,28 @@
+label1:
+    value: MOVETO
+    type: label
+label2:
+    value: 'Move Coord X:'
+    type: label
+    link: textbox1
+label3:
+    value: 'Move Coord Y:'
+    type: label
+label4:
+    value: Selector
+    type: label
+label5:
+    value: knots
+    type: label
+button1:
+    value: Start
+    type: button
+slider1:
+    size: (100,-1)
+    type: slider
+textbox1:
+    value: '25000'
+    type: textbox
+textbox2:
+    value: '38200'
+    type: textbox

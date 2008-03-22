@@ -1,0 +1,30 @@
+mode: iga
+port: 55800
+seed: null
+numgen: 30
+stepSize: 5
+rowSize: 3
+peers: []
+expand: False
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: best
+    size: 9
+  inject: 
+    type: bottom
+    percent: 0.10
+crossover:
+  type: mixed
+  prob: 0.8 
+  points: 1
+mutation:
+  type: mixed
+  prob: 0.01
+application:
+  name: test
+  bits: 100
+  feedback: [Best]

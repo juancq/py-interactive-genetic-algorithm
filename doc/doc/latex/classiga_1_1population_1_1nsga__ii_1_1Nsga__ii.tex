@@ -1,0 +1,115 @@
+\section{iga::population::nsga\_\-ii::Nsga\_\-ii Class Reference}
+\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii}\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+Inheritance diagram for iga::population::nsga\_\-ii::Nsga\_\-ii:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for iga::population::nsga\_\-ii::Nsga\_\-ii:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf crowdedDistance}
+\item 
+def {\bf domination}
+\item 
+def {\bf createFronts}
+\item 
+def {\bf fitnessBias}
+\item 
+def {\bf nextgen}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file nsga\_\-ii.py.
+
+\subsection{Member Function Documentation}
+\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::\_\-\_\-init\_\-\_\- ( {\em self},  {\em paramClass},  {\em paramDict})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_bde37079fa82731eae3d63952d198850}
+
+
+
+
+Reimplemented from {\bf iga::population::standard::Standard} \doxyref{}{p.}{classiga_1_1population_1_1standard_1_1Standard_f368f3e29658b25f9fbdbacfa36ea0c2}.
+
+Definition at line 5 of file nsga\_\-ii.py.\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!crowdedDistance@{crowdedDistance}}
+\index{crowdedDistance@{crowdedDistance}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::crowdedDistance ( {\em self},  {\em fronts})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_212aba86971540c64137d8f6f1bac34e}
+
+
+
+
+\footnotesize\begin{verbatim}
+Compute the crowding distance of individuals
+based on which front they're located.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 9 of file nsga\_\-ii.py.\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!domination@{domination}}
+\index{domination@{domination}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::domination ( {\em self},  {\em a},  {\em b})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_a0d5096090d7f27baeb5f500d5219383}
+
+
+
+
+\footnotesize\begin{verbatim}
+Determine if either a or b dominates the other.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 49 of file nsga\_\-ii.py.\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!createFronts@{createFronts}}
+\index{createFronts@{createFronts}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::createFronts ( {\em self},  {\em pop})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_7ed182d1c28127e4b8f759e7e0ef299d}
+
+
+
+
+\footnotesize\begin{verbatim}
+Create non-dominated fronts from evaluated population.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 74 of file nsga\_\-ii.py.\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!fitnessBias@{fitnessBias}}
+\index{fitnessBias@{fitnessBias}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::fitnessBias ( {\em self},  {\em pop})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_8a0812fc83305ee76831ba9f3cdb3f8e}
+
+
+
+
+Reimplemented from {\bf iga::population::standard::Standard} \doxyref{}{p.}{classiga_1_1population_1_1standard_1_1Standard_b12a95d10bd39844bc2fab8ace4f1d30}.
+
+Definition at line 133 of file nsga\_\-ii.py.\index{iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}!nextgen@{nextgen}}
+\index{nextgen@{nextgen}!iga::population::nsga_ii::Nsga_ii@{iga::population::nsga\_\-ii::Nsga\_\-ii}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def iga::population::nsga\_\-ii::Nsga\_\-ii::nextgen ( {\em self})}\label{classiga_1_1population_1_1nsga__ii_1_1Nsga__ii_453a7fa43e2b3b409323b8e95cfdfb19}
+
+
+
+
+\footnotesize\begin{verbatim}
+Create next generation from current population.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 140 of file nsga\_\-ii.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/iga/population/{\bf nsga\_\-ii.py}\end{CompactItemize}

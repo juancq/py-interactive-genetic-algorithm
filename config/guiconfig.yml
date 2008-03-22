@@ -1,0 +1,16 @@
+widgets:
+        mutation:
+                min: 0
+                max: 10000
+        crossover:
+                min: 0
+                max: 100
+        population:
+                min: 2
+                max: 300
+        objectiveWeight:
+                min: 0
+                max: 100
+        subjectiveWeight:
+                min: 0
+                max: 100

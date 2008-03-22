@@ -1,0 +1,43 @@
+inherits: [iga.yml]
+seed: 200
+numgen: 50
+stepSize: 1
+population:
+  type: nsga_ii
+  size: 100
+  selection: crowded_tournament
+  combinepop: front_elitist
+  subset:
+    type: evenfront
+    size: 9
+crossover:
+  type: masked_mixed
+  prob: 0.8 
+  points: 1
+mutation:
+  type: mixed
+  prob: 0.01
+
+application:
+  name: maskxulgui
+  bits: 24
+  objScaleMax: 1000.0
+  objScaleMin: 0.0
+  subjScaleMax: 1000.0
+  subjScaleMin: 0.0
+  folder: data/
+  output: output
+  ui_file: moveto.panel
+  width: 360
+  height: 260
+  rows: 10
+  cols: 2
+  compare: both
+
+  feedback: [Best]
+
+  vars:
+    style:
+      mask: False
+    grid:
+      mask: True

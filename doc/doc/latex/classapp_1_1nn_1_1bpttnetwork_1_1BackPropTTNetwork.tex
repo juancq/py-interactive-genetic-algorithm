@@ -1,0 +1,382 @@
+\section{app::nn::bpttnetwork::BackPropTTNetwork Class Reference}
+\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork}\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf addToInputLayer}
+\item 
+def {\bf addToOutputLayer}
+\item 
+def {\bf addToHiddenLayer}
+\item 
+def {\bf addNode}
+\item 
+def {\bf addConnection}
+\item 
+def {\bf addThreshold}
+\item 
+def {\bf setInput}
+\item 
+def {\bf getOutput}
+\item 
+def {\bf test}
+\item 
+def {\bf train}
+\item 
+def {\bf clear}
+\item 
+def {\bf adjustWeights}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf id}
+\item 
+{\bf doprop}
+\item 
+{\bf layers}
+\item 
+{\bf inputs}
+\item 
+{\bf outputs}
+\item 
+{\bf tnode}
+\item 
+{\bf history}
+\item 
+{\bf oldw}
+\item 
+{\bf rand}
+\item 
+{\bf epoch}
+\item 
+{\bf patnum}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file bpttnetwork.py.
+
+\subsection{Member Function Documentation}
+\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::\_\-\_\-init\_\-\_\- ( {\em self},  {\em input},  {\em hidden},  {\em output},  {\em history},  {\em seed} = {\tt 0})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_e88d621dd335d810bc064d463492f63c}
+
+
+
+
+\footnotesize\begin{verbatim}Create a 3-layer NN that uses backpropagation through time
+
+input (int) :: number of input nodes
+hidden (int) :: number of hidden nodes
+output (int) :: number of output nodes
+history (int) :: how many times steps to use for backprop
+seed (int) :: random number generator see
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 7 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addToInputLayer@{addToInputLayer}}
+\index{addToInputLayer@{addToInputLayer}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addToInputLayer ( {\em self})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_a2f82f0b24da54b39bec328e52330cd6}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a node to the input layer\end{verbatim}
+\normalsize
+ 
+
+Definition at line 41 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addToOutputLayer@{addToOutputLayer}}
+\index{addToOutputLayer@{addToOutputLayer}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addToOutputLayer ( {\em self},  {\em threshold})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_203911b49bbbe474e4e83d0a33bdffcb}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a node to the output layer
+
+threshold (float) :: the node's threshold weight
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 50 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addToHiddenLayer@{addToHiddenLayer}}
+\index{addToHiddenLayer@{addToHiddenLayer}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addToHiddenLayer ( {\em self},  {\em threshold})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_b214e6ad6c1f90b1d4671f110a838209}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a node to the hidden layer
+
+threshold (float) :: the node's threshold weight
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 62 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addNode@{addNode}}
+\index{addNode@{addNode}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addNode ( {\em self},  {\em layer},  {\em threshold} = {\tt None},  {\em squash} = {\tt True})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_d89c46cb401db8e7dd421f2f84d71857}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a node to the network and adds connections
+
+layer (int) :: which layer this node belongs, 0 - input, 1 - hidden, 2 - output
+threshold (float) :: A node's threshold weight. Optionally none for input nodes
+
+return newnode (Node) :: the new node created
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 69 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addConnection ( {\em self},  {\em src},  {\em dest},  {\em weight} = {\tt 1.0},  {\em delay} = {\tt 0})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_d49a2b12a53782ea2ec1e0a0803ae753}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a connection between two nodes
+
+src (Node) :: The source node
+dest (Node) :: The destination node
+weight (float) :: Optional (default 1.0). The weight of this connection
+delay (int) :: Optional (default 0). Recurrent links have values greater than 0.
+       This is how far back in time it gets its value. Right now this
+       has only been tested with values of 0 and 1.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 90 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!addThreshold@{addThreshold}}
+\index{addThreshold@{addThreshold}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::addThreshold ( {\em self},  {\em dest},  {\em threshold})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_e4afc69ae098bf9f6d5fa2eb9b82c68f}
+
+
+
+
+\footnotesize\begin{verbatim}Adds a threshold connection to the threshold node
+
+dest (Node) :: The destination node
+theshold (float) :: The weight of the threshold connection
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 104 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!setInput@{setInput}}
+\index{setInput@{setInput}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::setInput ( {\em self},  {\em vals})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_9af942d12d5b34c89d863e7c039f80da}
+
+
+
+
+\footnotesize\begin{verbatim}Sets the inputs of the network to vals and propagates the values
+
+vals (list:float or ints) :: The input values
+
+Side effects: All the nodes and connections will likely have different
+values after this call
+
+After the values have been propagated, it takes the final activation of the hidden 
+nodes and pushes it on to the front of the queue and pops of the last of the
+queue. This is and important timing issue. When propagating the values, 
+the top of the queue will have the activation from one time step in the
+past. When backpropagating errors, the head of the queue will be the same as
+the current activation.
+
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 115 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::getOutput ( {\em self})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_18f4981b4efa1cf74c2e81f4e303782c}
+
+
+
+
+\footnotesize\begin{verbatim}Returns a list of the output nodes activations\end{verbatim}
+\normalsize
+ 
+
+Definition at line 146 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!test@{test}}
+\index{test@{test}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::test ( {\em self},  {\em pattern})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_b24b762f035e90cdda7b2f1539ee81e1}
+
+
+
+
+\footnotesize\begin{verbatim}Tests the current network on the test data
+
+patterns (list or generator) :: It looks like this:
+    [ 
+[ [list of inputs], [output list] ],
+...more patterns...
+    ]
+    
+    The generator should return a list (or tuple) of the input and output list:
+    ([list of inputs], [list of outputs])
+
+    At no point is the list modified, so the whole thing can be nested tuples
+    if you like. The values of inputs and outputs can be floats or ints.
+
+returns (right, wrong, kap) (int, int, dict) ::
+    right - number of correct guesses
+    wrong - number of wrong guesses
+    kap - a two dimentional kappa matrix (dictionary). Kappa not actually calulated
+
+Note: This is a fairly generic test function and may not work in many cases.
+For example, all the outputs are rounded to 1.0 or 0.0 which will only work
+if your sample outputs should be one or zero. It is easy to make your own
+test fuction. Just cycle through your own patterns, call setInput() and 
+getOutput() and do whatever calculations you like
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 153 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!train@{train}}
+\index{train@{train}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::train ( {\em self},  {\em patgen},  {\em rate},  {\em mrate},  {\em fi} = {\tt None})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_7b6bd4b377398567063bfc96436f7bc3}
+
+
+
+
+\footnotesize\begin{verbatim}Trains a network for a given set of patterns
+
+patgen (Generator generator) :: Alright, let me explain,
+    I use a generator function to create the set of patterns used in training.
+    This is because when I created this thing, my test problem was predicting
+    sine, with which I can easily generate points dynamically through a generator.
+    The problem with a generator is when it is done generating, there isn't a way to
+    reset it. Well, I can in python2.5, but 2.4 is still pretty prevalent. So, I need
+    a way to generate pattern generators. It's kind of messy to explain, but looks
+    good in code. Just look at the examples.
+rate (float) :: Learning rate
+mrate (float) :: Momentum rate
+fi (File) :: Optional. If specified, the epoch error will be dump to a files. 
+     Otherwise it is dumped to stdout.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 199 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!clear@{clear}}
+\index{clear@{clear}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::clear ( {\em self})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_a0cd91ec461f4b501e8f51022db74ebf}
+
+
+
+
+Definition at line 235 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!adjustWeights@{adjustWeights}}
+\index{adjustWeights@{adjustWeights}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::bpttnetwork::BackPropTTNetwork::adjustWeights ( {\em self},  {\em target},  {\em rate},  {\em mrate})}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_787d886cd117a7423e0b45fb1e9ddf26}
+
+
+
+
+\footnotesize\begin{verbatim}Apply backpropagation through time on network and adjust weights
+
+target (list) :: the list of target outputs
+rate (float) :: learning rate
+mrate (float) :: momentum rate
+
+I don't think I can explain how backprop through time works here. There are
+papers and books for that. But I can explain my implementation and how it ties
+into the damned algorithm. 90% of this is standard backprop. Understanding that
+is probably a wise prequisite. I'll be mostly commenting on the "through time"
+parts. Read on!
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 239 of file bpttnetwork.py.
+
+\subsection{Member Data Documentation}
+\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!id@{id}}
+\index{id@{id}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::id}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_c2857e4703fe2fad702bac2f14217c3e}
+
+
+
+
+Definition at line 17 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!doprop@{doprop}}
+\index{doprop@{doprop}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::doprop}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_6cd0fabcfebcbb2f6f9f97ab0d8ae1e1}
+
+
+
+
+Definition at line 18 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!layers@{layers}}
+\index{layers@{layers}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::layers}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_ebcac78329c5e395fcd7cfbdf3f0395b}
+
+
+
+
+Definition at line 19 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!inputs@{inputs}}
+\index{inputs@{inputs}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::inputs}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_02c390a38458d524891b5afc16f8c659}
+
+
+
+
+Definition at line 20 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!outputs@{outputs}}
+\index{outputs@{outputs}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::outputs}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_0e18e50206d8b821a53c7d4474f1c350}
+
+
+
+
+Definition at line 21 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!tnode@{tnode}}
+\index{tnode@{tnode}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::tnode}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_95cf1c15014406a9e2af0b40cfd10a7a}
+
+
+
+
+Definition at line 22 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!history@{history}}
+\index{history@{history}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::history}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_7d102e7560697f20e0491565c17c50aa}
+
+
+
+
+Definition at line 24 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!oldw@{oldw}}
+\index{oldw@{oldw}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::oldw}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_be20b999e80ccedd308c706fbfedce19}
+
+
+
+
+Definition at line 25 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!rand@{rand}}
+\index{rand@{rand}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::rand}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_b54bec2f879bdc8f0153f7ed61dba446}
+
+
+
+
+Definition at line 27 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!epoch@{epoch}}
+\index{epoch@{epoch}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::epoch}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_98250b31feca64d599c29cbc8668f4af}
+
+
+
+
+Definition at line 215 of file bpttnetwork.py.\index{app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}!patnum@{patnum}}
+\index{patnum@{patnum}!app::nn::bpttnetwork::BackPropTTNetwork@{app::nn::bpttnetwork::BackPropTTNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::bpttnetwork::BackPropTTNetwork::patnum}}\label{classapp_1_1nn_1_1bpttnetwork_1_1BackPropTTNetwork_aab6cf7f5561ae347bf113e11199a58d}
+
+
+
+
+Definition at line 220 of file bpttnetwork.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/nn/{\bf bpttnetwork.py}\end{CompactItemize}

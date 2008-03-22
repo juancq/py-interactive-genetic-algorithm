@@ -1,0 +1,222 @@
+\section{app::nn::backpropnetwork::BackPropNetwork Class Reference}
+\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork}\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf addToInputLayer}
+\item 
+def {\bf addToOutputLayer}
+\item 
+def {\bf addToHiddenLayer}
+\item 
+def {\bf addNode}
+\item 
+def {\bf addConnection}
+\item 
+def {\bf addThreshold}
+\item 
+def {\bf setInput}
+\item 
+def {\bf getOutput}
+\item 
+def {\bf test}
+\item 
+def {\bf adjustWeights}
+\item 
+def {\bf train}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf nodes}
+\item 
+{\bf id}
+\item 
+{\bf index}
+\item 
+{\bf doprop}
+\item 
+{\bf layers}
+\item 
+{\bf inputs}
+\item 
+{\bf outputs}
+\item 
+{\bf tnode}
+\item 
+{\bf oldw}
+\item 
+{\bf rand}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file backpropnetwork.py.
+
+\subsection{Member Function Documentation}
+\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::\_\-\_\-init\_\-\_\- ( {\em self},  {\em input},  {\em hidden},  {\em output},  {\em seed} = {\tt 0})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_85ce3f7959d201119d3281e5897c4ce5}
+
+
+
+
+Definition at line 7 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addToInputLayer@{addToInputLayer}}
+\index{addToInputLayer@{addToInputLayer}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addToInputLayer ( {\em self})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_856146a10f4d8edc110d962a42be2c7b}
+
+
+
+
+Definition at line 28 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addToOutputLayer@{addToOutputLayer}}
+\index{addToOutputLayer@{addToOutputLayer}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addToOutputLayer ( {\em self},  {\em threshold})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_86d9736a9aa366876ff7934a51ab2f34}
+
+
+
+
+Definition at line 34 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addToHiddenLayer@{addToHiddenLayer}}
+\index{addToHiddenLayer@{addToHiddenLayer}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addToHiddenLayer ( {\em self},  {\em threshold})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_393a3e306806ecf907a8cfedbfdd3ec0}
+
+
+
+
+Definition at line 40 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addNode@{addNode}}
+\index{addNode@{addNode}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addNode ( {\em self},  {\em layer},  {\em threshold} = {\tt None},  {\em squash} = {\tt True})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_622a933a4e590f61de196e30c2f103a9}
+
+
+
+
+Definition at line 43 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addConnection ( {\em self},  {\em src},  {\em dest},  {\em weight} = {\tt 1.0})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_d44b938b3a93eb76d37ee7b8cc931337}
+
+
+
+
+Definition at line 57 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!addThreshold@{addThreshold}}
+\index{addThreshold@{addThreshold}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::addThreshold ( {\em self},  {\em dest},  {\em threshold})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_f105d7b8e42ead35b9abdfa50b4d83e9}
+
+
+
+
+Definition at line 62 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!setInput@{setInput}}
+\index{setInput@{setInput}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::setInput ( {\em self},  {\em vals})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_64019fd6a370ab3e99abcf640210b0f3}
+
+
+
+
+Definition at line 68 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::getOutput ( {\em self})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_da2b98bbdeac978ec845eb10b7c00825}
+
+
+
+
+Definition at line 79 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!test@{test}}
+\index{test@{test}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::test ( {\em self},  {\em pattern})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_5a073915594bdf65b20c44d2d8896856}
+
+
+
+
+Definition at line 85 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!adjustWeights@{adjustWeights}}
+\index{adjustWeights@{adjustWeights}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::adjustWeights ( {\em self},  {\em input},  {\em target},  {\em rate},  {\em mrate})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_bf6efdea9543fdc067baf93b3d19ea78}
+
+
+
+
+Definition at line 108 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!train@{train}}
+\index{train@{train}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::nn::backpropnetwork::BackPropNetwork::train ( {\em self},  {\em patterns},  {\em iter},  {\em rate},  {\em mrate} = {\tt 0.0},  {\em fi} = {\tt None})}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_10870906fba4057e097952eff92ea64e}
+
+
+
+
+Definition at line 146 of file backpropnetwork.py.
+
+\subsection{Member Data Documentation}
+\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!nodes@{nodes}}
+\index{nodes@{nodes}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::nodes}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_03609b3b56d4d070c3af8c227aa84602}
+
+
+
+
+Definition at line 8 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!id@{id}}
+\index{id@{id}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::id}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_7ae6ca8cb458bc82e2f57889cadd8be6}
+
+
+
+
+Definition at line 9 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!index@{index}}
+\index{index@{index}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::index}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_41d2d429419fadd2c74fd3a1f7808b95}
+
+
+
+
+Definition at line 10 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!doprop@{doprop}}
+\index{doprop@{doprop}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::doprop}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_ce2cbdb974978c8dbc1c7677cbbd6fb0}
+
+
+
+
+Definition at line 11 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!layers@{layers}}
+\index{layers@{layers}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::layers}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_d7ddc94ceeb837cb49a803e1ce02b61e}
+
+
+
+
+Definition at line 12 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!inputs@{inputs}}
+\index{inputs@{inputs}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::inputs}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_13a87923ee650a64bac35beaa3414d2d}
+
+
+
+
+Definition at line 13 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!outputs@{outputs}}
+\index{outputs@{outputs}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::outputs}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_9d2ffc0c377c6c89d9bbaec76500404d}
+
+
+
+
+Definition at line 14 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!tnode@{tnode}}
+\index{tnode@{tnode}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::tnode}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_b0d9d2725219b64162461bc794151b84}
+
+
+
+
+Definition at line 15 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!oldw@{oldw}}
+\index{oldw@{oldw}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::oldw}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_09c524a447472132f01804150564e018}
+
+
+
+
+Definition at line 17 of file backpropnetwork.py.\index{app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}!rand@{rand}}
+\index{rand@{rand}!app::nn::backpropnetwork::BackPropNetwork@{app::nn::backpropnetwork::BackPropNetwork}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::nn::backpropnetwork::BackPropNetwork::rand}}\label{classapp_1_1nn_1_1backpropnetwork_1_1BackPropNetwork_ad00e11259f6132ebe6954084c8c745b}
+
+
+
+
+Definition at line 19 of file backpropnetwork.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/nn/{\bf backpropnetwork.py}\end{CompactItemize}

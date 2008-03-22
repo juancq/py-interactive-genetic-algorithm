@@ -1,0 +1,144 @@
+inherits: [iga.yml]
+numgen: 50
+stepSize: 1
+expand: True
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 9
+crossover:
+  type: simple
+  prob: 0.7
+  points: 1
+mutation:
+  type: simple
+  prob: 0.01
+application:
+  name: mesh
+  size: (250,250)
+  tick: 20
+  vars:
+    v1x: 
+        max: 2
+        min: -2
+        scale: .1
+    v1y: 
+        max: 2
+        min: -2
+        scale: .1
+    v1z: 
+        max: 2
+        min: -2
+        scale: .1
+    v2x: 
+        max: 2
+        min: -2
+        scale: .1
+    v2y: 
+        max: 2
+        min: -2
+        scale: .1
+    v2z: 
+        max: 2
+        min: -2
+        scale: .1
+    v3x: 
+        max: 2
+        min: -2
+        scale: .1
+    v3y: 
+        max: 2
+        min: -2
+        scale: .1
+    v3z: 
+        max: 2
+        min: -2
+        scale: .1
+    v4x: 
+        max: 2
+        min: -2
+        scale: .1
+    v4y: 
+        max: 2
+        min: -2
+        scale: .1
+    v4z: 
+        max: 2
+        min: -2
+        scale: .1
+    v5x: 
+        max: 2
+        min: -2
+        scale: .1
+    v5y: 
+        max: 2
+        min: -2
+        scale: .1
+    v5z: 
+        max: 2
+        min: -2
+        scale: .1
+    v6x: 
+        max: 2
+        min: -2
+        scale: .1
+    v6y: 
+        max: 2
+        min: -2
+        scale: .1
+    v6z: 
+        max: 2
+        min: -2
+        scale: .1
+    v7x: 
+        max: 2
+        min: -2
+        scale: .1
+    v7y: 
+        max: 2
+        min: -2
+        scale: .1
+    v7z: 
+        max: 2
+        min: -2
+        scale: .1
+    v8x: 
+        max: 2
+        min: -2
+        scale: .1
+    v8y: 
+        max: 2
+        min: -2
+        scale: .1
+    v8z: 
+        max: 2
+        min: -2
+        scale: .1
+    v9x: 
+        max: 2
+        min: -2
+        scale: .1
+    v9y: 
+        max: 2
+        min: -2
+        scale: .1
+    v9z: 
+        max: 2
+        min: -2
+        scale: .1
+    v10x: 
+        max: 2
+        min: -2
+        scale: .1
+    v10y: 
+        max: 2
+        min: -2
+        scale: .1
+    v10z: 
+        max: 2
+        min: -2
+        scale: .1

@@ -1,0 +1,202 @@
+
+import wx
+
+class TestTemplate(wx.Frame):
+
+    def __init__(self, parent, coordinates, shape_sizes, color_scheme, 
+            transf, rr_radius, panel_size):
+
+        self.parent = parent
+        self.scale_factor = scale_factor = 3
+        self.width = panel_size[0] * scale_factor
+        self.height = panel_size[1] * scale_factor
+        wx.Frame.__init__(self, parent, wx.NewId(), size=(self.width, self.height))
+
+        self.coordinates = [i*scale_factor for i in coordinates]
+        self.shape_sizes = [i*scale_factor for i in shape_sizes]
+        #self.shape_sizes = shape_sizes
+        self.color_scheme = color_scheme
+        self.transf = transf
+        self.max_val = 0.3
+        self.min_val = -0.3
+        self.rr_radius = rr_radius * scale_factor
+
+        self.drawHiddenBmp()
+
+        self.sizer = wx.BoxSizer(wx.VERTICAL)
+        self.canvas = wx.Panel(self, size =(self.width, self.height))
+        self.canvas.Bind(wx.EVT_PAINT, self.draw)
+        self.canvas.Bind(wx.EVT_LEFT_DOWN, self.onClick)
+        
+        vsizer = wx.BoxSizer(wx.HORIZONTAL)
+        vsizer.Add(self.canvas)
+        self.sizer.Add(vsizer)
+
+        self.SetSizer(self.sizer)
+
+        #self.hidden_canvas = wx.Panel(self, size =(self.width, self.height))
+        #self.hidden_canvas.Hide()
+        #self.drawUniqueShapes()
+
+
+#-------------------------------------------#
+    def onClick(self, event):
+        dc = wx.MemoryDC()
+        dc.SelectObject(self.hidden_canvas)
+        pos = event.GetPosition()
+        color = dc.GetPixelPoint(pos)
+        print 'pos and color ', pos, color, color.Green(), type(color.Green())
+        i = color.Red()
+        #if i < len(self.shape_handle):
+        self.shape_handle[i] = False
+        #print 'shape ', self.shape_handle[tuple(color)]
+        self.Refresh()
+
+
+#-------------------------------------------#
+    def computeShapeLoc(self):
+
+        shape_list = []
+        coordinates, shape_sizes = self.coordinates, self.shape_sizes
+        i = 0
+        transf = self.transf
+        max_val = self.max_val
+        min_val = self.min_val
+
+        shape_handle = []
+        shape_i = 0
+        for j in xrange(len(self.transf)):
+
+            # if not a blank space
+            shape = transf[j][-1]
+            if shape:
+                c = (shape_i, 0, 0)
+                shape_i += 1
+                dc.SetBrush(wx.Brush(c))
+                xdiff =  transf[j][0] * (max_val-min_val) + min_val
+                ydiff =  transf[j][1] * (max_val-min_val) + min_val
+                l = shape_sizes[i] - coordinates[i]
+                w = shape_sizes[i+1] - coordinates[i+1]
+                l = float(l) * xdiff * 0.5
+                w = float(w) * ydiff * 0.5
+
+                shape_list.append({'shape': shape, 'img': None,
+                        'pos':[coordinates[i]+l, coordinates[i+1]+w, 
+                        shape_sizes[i]+l, shape_sizes[i+1]+w]})
+
+
+                shape_handle.append([shape, [coordinates[i]+l,coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w]])
+
+            i += 2
+
+        self.shape_handle = shape_handle
+        self.hidden_canvas = oldPix
+        self.shape_list = shape_list
+
+#-------------------------------------------#
+    def drawHiddenBmp(self):
+        oldPix  = wx.EmptyBitmap(self.width, self.height)
+        dc = wx.MemoryDC()
+        dc.SelectObject(oldPix)
+        dc.SetBackground(wx.WHITE_BRUSH)  # allocates the space
+        dc.Clear()                       # The images have to be cleared
+
+        coordinates, shape_sizes = self.coordinates, self.shape_sizes
+
+        i = 0
+        transf = self.transf
+        shape_list = self.shape_list
+
+        dc.SetPen(wx.Pen("black",1))
+
+        shape_handle = []
+        # transf is half len of coordinates and shape_sizes
+
+        shape_i = 0
+        for j in xrange(len(self.transf)):
+
+            dc.SetBrush(wx.WHITE_BRUSH)
+
+            # if not a blank space
+            shape = transf[j][-1]
+            if shape:
+                c = (shape_i, 0, 0)
+                shape_i += 1
+                dc.SetBrush(wx.Brush(c))
+                xdiff =  transf[j][0] * (max_val-min_val) + min_val
+                ydiff =  transf[j][1] * (max_val-min_val) + min_val
+                l = shape_sizes[i] - coordinates[i]
+                w = shape_sizes[i+1] - coordinates[i+1]
+                l = float(l) * xdiff * 0.5
+                w = float(w) * ydiff * 0.5
+                if shape == 1:
+                    dc.DrawRectangle(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w)
+                elif shape == 2:
+                    dc.DrawRoundedRectangle(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w, self.rr_radius)
+                elif shape == 3:
+                    dc.DrawEllipse(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w)
+
+                #shape_handle[c] = [shape, [coordinates[i]+l,coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w]]
+                shape_handle.append([shape, [coordinates[i]+l,coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w]])
+
+            i += 2
+
+        self.shape_handle = shape_handle
+        self.hidden_canvas = oldPix
+
+
+#-------------------------------------------#
+    def draw(self, event):
+        '''
+        Draw the document with various shapes, but no overlap (ignore x and y
+        deformation values).
+        '''
+        dc = wx.PaintDC(self.canvas)
+        coordinates, shape_sizes = self.coordinates, self.shape_sizes
+
+        dc.SetBackground(wx.Brush(wx.WHITE))
+        dc.Clear()
+
+        i = 0
+        transf = self.transf
+        max_val = self.max_val
+        min_val = self.min_val
+
+        dc.SetPen(wx.Pen("black",1))
+
+        color = self.color_scheme
+        len_color = len(color)
+        # transf is half len of coordinates and shape_sizes
+
+        shape_i = 0
+        for j in xrange(len(self.transf)):
+
+            dc.SetBrush(wx.Brush(tuple(color[j%len_color])))
+            # if not a blank space
+            shape = transf[j][-1]
+            if shape:
+                if not self.shape_handle[shape_i]:
+                    dc.SetBrush(wx.Brush(wx.Colour(0, 255, 255)))
+                shape_i += 1
+
+                xdiff =  transf[j][0] * (max_val-min_val) + min_val
+                ydiff =  transf[j][1] * (max_val-min_val) + min_val
+                l = shape_sizes[i] - coordinates[i]
+                w = shape_sizes[i+1] - coordinates[i+1]
+                l = float(l) * xdiff * 0.5
+                w = float(w) * ydiff * 0.5
+                if shape == 1:
+                    dc.DrawRectangle(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w)
+                elif shape == 2:
+                    dc.DrawRoundedRectangle(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w, self.rr_radius)
+                elif shape == 3:
+                    dc.DrawEllipse(coordinates[i]+l, coordinates[i+1]+w, shape_sizes[i]+l, shape_sizes[i+1]+w)
+
+            i += 2
+
+        dc.SetPen(wx.Pen("black",4))
+        dc.DrawLineList([(coordinates[0], coordinates[1], self.width, coordinates[1]), 
+                (self.width, coordinates[1], self.width, self.height),
+                (self.width, self.height, coordinates[0], self.height),
+                (coordinates[0], self.height, coordinates[0], coordinates[1])]
+                )

@@ -1,0 +1,60 @@
+inherits: [iga.yml]
+numgen: 50
+stepSize: 1
+expand: True
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 9
+crossover:
+  type: masked
+  prob: 0.7
+  points: 1
+mutation:
+  type: masked
+  prob: 0.01
+application:
+  name: maskglapp
+  size: (250,250)
+  tick: 20
+  vars:
+    xrot: 
+        max: 180
+        min: -180
+        scale: 1.
+        default: 0.
+        mask: True
+    yrot: 
+        max: 180
+        min: -180
+        scale: 1.
+        default: 0.
+        mask: True
+    zrot: 
+        max: 180
+        min: -180
+        scale: 1.
+        default: 0.
+        mask: True
+    xorigin: 
+        max: 2.
+        min: -2.
+        scale: .1
+        default: 0.
+        mask: False
+    yorigin: 
+        max: 2.
+        min: -2.
+        scale: .1
+        default: 0.
+        mask: False
+    update: 
+        max: 50.
+        min: 0.5
+        scale: .2
+        default: 0.
+        mask: True

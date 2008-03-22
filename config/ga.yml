@@ -1,0 +1,18 @@
+mode: ga
+seed: 200
+numgen: 30
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+crossover:
+  type: simple
+  prob: 0.7
+  points: 1
+mutation:
+  type: simple
+  prob: 0.01
+application:
+  name: test
+  bits: 100

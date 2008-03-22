@@ -1,0 +1,11 @@
+<panel size="(250, 280)" >
+<label id="2" value="MOVETO" />
+<label id="3" value="Move Coord X:" bind="9" />
+<textbox id="9" value="25000" />
+<label id="4" value="Move Coord Y:" bind="10" />
+<textbox id="10" value="38200" />
+<button id="5" value="Start" />
+<label id="6" value="Selector" bind="8" />
+<slider id="8" size="(100,-1)" bind="7" />
+<label id="7" value="knots" />
+</panel>

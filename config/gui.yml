@@ -1,0 +1,21 @@
+seed: 200
+numgen: 50
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 9
+crossover:
+  type: mixed
+  prob: 0.8 
+  points: 1
+mutation:
+  type: mixed
+  prob: 0.01
+application:
+  name: xulgui
+  bits: 24
+  panel: movetopanel.yml

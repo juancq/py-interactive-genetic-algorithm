@@ -1,0 +1,251 @@
+\section{gui::rightPanel::RightPanel Class Reference}
+\label{classgui_1_1rightPanel_1_1RightPanel}\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf onSubmit}
+\item 
+def {\bf onRun}
+\item 
+def {\bf setGeneration}
+\item 
+def {\bf fit}
+\item 
+def {\bf display}
+\item 
+def {\bf fillCoGAPanels}
+\item 
+def {\bf onStart}
+\item 
+def {\bf setStepSize}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf parent}
+\item 
+{\bf sizer}
+\item 
+{\bf startButton}
+\item 
+{\bf genLabel}
+\item 
+{\bf coga\_\-panel}
+\item 
+{\bf displayPanel}
+\item 
+{\bf submit}
+\item 
+{\bf generation}
+\item 
+{\bf tCogaPanel}
+\item 
+{\bf lCogaPanel}
+\item 
+{\bf rCogaPanel}
+\item 
+{\bf bCogaPanel}
+\item 
+{\bf currentGen}
+\item 
+{\bf peer\_\-genome}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file rightPanel.py.
+
+\subsection{Member Function Documentation}
+\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::\_\-\_\-init\_\-\_\- ( {\em self},  {\em parent},  {\em params} = {\tt None},  {\em size} = {\tt None},  {\em color} = {\tt \char`\"{}LIGHT~BLUE\char`\"{}},  {\em style} = {\tt None})}\label{classgui_1_1rightPanel_1_1RightPanel_b8cdef9c41f92481f115c41e5f4448d3}
+
+
+
+
+Definition at line 7 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!onSubmit@{onSubmit}}
+\index{onSubmit@{onSubmit}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::onSubmit ( {\em self},  {\em e})}\label{classgui_1_1rightPanel_1_1RightPanel_d919a4731993690138b3dc502ee102b9}
+
+
+
+
+\footnotesize\begin{verbatim}
+Take user selection and pass it to the GA for 
+fitness evaluation.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 71 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!onRun@{onRun}}
+\index{onRun@{onRun}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::onRun ( {\em self})}\label{classgui_1_1rightPanel_1_1RightPanel_d48af3d4e2c029d6231f40945aa85426}
+
+
+
+
+Definition at line 93 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!setGeneration@{setGeneration}}
+\index{setGeneration@{setGeneration}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::setGeneration ( {\em self},  {\em gen})}\label{classgui_1_1rightPanel_1_1RightPanel_023eb0b2bf7fac399030739acc339b03}
+
+
+
+
+Definition at line 102 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!fit@{fit}}
+\index{fit@{fit}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::fit ( {\em self})}\label{classgui_1_1rightPanel_1_1RightPanel_bf70234134187d005c7c7fece48c47aa}
+
+
+
+
+Definition at line 107 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!display@{display}}
+\index{display@{display}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::display ( {\em self},  {\em panels\_\-to\_\-display})}\label{classgui_1_1rightPanel_1_1RightPanel_18a4a05946f710e26a077406ba65cd35}
+
+
+
+
+\footnotesize\begin{verbatim}
+Takes a list of panels to display to be evaluated.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 111 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!fillCoGAPanels@{fillCoGAPanels}}
+\index{fillCoGAPanels@{fillCoGAPanels}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::fillCoGAPanels ( {\em self})}\label{classgui_1_1rightPanel_1_1RightPanel_76f2fbaacfa72ceed53086189468e5f8}
+
+
+
+
+\footnotesize\begin{verbatim}
+Request genomes from peers to be displayed on collaboration
+panels.
+\end{verbatim}
+\normalsize
+ 
+
+Definition at line 127 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!onStart@{onStart}}
+\index{onStart@{onStart}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::onStart ( {\em self},  {\em event})}\label{classgui_1_1rightPanel_1_1RightPanel_22f25250534b91da5419efc6faff9608}
+
+
+
+
+Definition at line 185 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!setStepSize@{setStepSize}}
+\index{setStepSize@{setStepSize}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def gui::rightPanel::RightPanel::setStepSize ( {\em self},  {\em step})}\label{classgui_1_1rightPanel_1_1RightPanel_2e16ab4ed29f3b1f2df12fbb78c731aa}
+
+
+
+
+Definition at line 189 of file rightPanel.py.
+
+\subsection{Member Data Documentation}
+\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!parent@{parent}}
+\index{parent@{parent}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::parent}}\label{classgui_1_1rightPanel_1_1RightPanel_0e224e471c78e2f7a0db62db5b0e479c}
+
+
+
+
+Definition at line 10 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!sizer@{sizer}}
+\index{sizer@{sizer}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::sizer}}\label{classgui_1_1rightPanel_1_1RightPanel_c84e6675e20e3e2add4f63aa3e9ee320}
+
+
+
+
+Definition at line 14 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!startButton@{startButton}}
+\index{startButton@{startButton}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::startButton}}\label{classgui_1_1rightPanel_1_1RightPanel_e8708b86a279de06b3a27c236b539054}
+
+
+
+
+Definition at line 16 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!genLabel@{genLabel}}
+\index{genLabel@{genLabel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::genLabel}}\label{classgui_1_1rightPanel_1_1RightPanel_4018c7671a3ef90ebba81a380ec7fe24}
+
+
+
+
+Definition at line 20 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!coga_panel@{coga\_\-panel}}
+\index{coga_panel@{coga\_\-panel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::coga\_\-panel}}\label{classgui_1_1rightPanel_1_1RightPanel_35d07971c018307f203fa4aebae6137b}
+
+
+
+
+Definition at line 30 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!displayPanel@{displayPanel}}
+\index{displayPanel@{displayPanel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::displayPanel}}\label{classgui_1_1rightPanel_1_1RightPanel_fc2f0f1dd15aeec605340baeaf4f639f}
+
+
+
+
+Definition at line 41 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!submit@{submit}}
+\index{submit@{submit}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::submit}}\label{classgui_1_1rightPanel_1_1RightPanel_aeabadbc6b82c8c4ff3ac47df242f391}
+
+
+
+
+Definition at line 52 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!generation@{generation}}
+\index{generation@{generation}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::generation}}\label{classgui_1_1rightPanel_1_1RightPanel_5f66d435af2d58a6857ff73eb6c5aa70}
+
+
+
+
+Definition at line 63 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!tCogaPanel@{tCogaPanel}}
+\index{tCogaPanel@{tCogaPanel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::tCogaPanel}}\label{classgui_1_1rightPanel_1_1RightPanel_54a684293c81577edfd0513d97331682}
+
+
+
+
+Definition at line 64 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!lCogaPanel@{lCogaPanel}}
+\index{lCogaPanel@{lCogaPanel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::lCogaPanel}}\label{classgui_1_1rightPanel_1_1RightPanel_8937584cdb81ee15aa47b69dd971d24c}
+
+
+
+
+Definition at line 65 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!rCogaPanel@{rCogaPanel}}
+\index{rCogaPanel@{rCogaPanel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::rCogaPanel}}\label{classgui_1_1rightPanel_1_1RightPanel_3d5bcdac89d42b8a0dd25435c0c463df}
+
+
+
+
+Definition at line 66 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!bCogaPanel@{bCogaPanel}}
+\index{bCogaPanel@{bCogaPanel}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::bCogaPanel}}\label{classgui_1_1rightPanel_1_1RightPanel_afbdbba76c19a056d5d8f4501c1f0c87}
+
+
+
+
+Definition at line 67 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!currentGen@{currentGen}}
+\index{currentGen@{currentGen}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::currentGen}}\label{classgui_1_1rightPanel_1_1RightPanel_da5be7bbbe88e4aafef3a5396d564257}
+
+
+
+
+Definition at line 97 of file rightPanel.py.\index{gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}!peer_genome@{peer\_\-genome}}
+\index{peer_genome@{peer\_\-genome}!gui::rightPanel::RightPanel@{gui::rightPanel::RightPanel}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::rightPanel::RightPanel::peer\_\-genome}}\label{classgui_1_1rightPanel_1_1RightPanel_9c65f8d4997b8dc65427bf0b0bc16a65}
+
+
+
+
+Definition at line 182 of file rightPanel.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/gui/{\bf rightPanel.py}\end{CompactItemize}

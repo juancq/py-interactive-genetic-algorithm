@@ -1,0 +1,23 @@
+inherits: [iga.yml]
+seed: 200
+numgen: 50
+stepSize: 1
+expand: True
+population:
+  type: standard
+  size: 100
+  selection: roulette
+  combinepop: elitist
+  subset:
+    type: evensample
+    size: 9
+crossover:
+  type: simple
+  prob: 0.8 
+  points: 1
+mutation:
+  type: simple
+  prob: 0.005
+application:
+  name: frogger
+  bits: 30

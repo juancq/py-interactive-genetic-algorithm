@@ -1,0 +1,326 @@
+\section{app::xulgui::xulgui::Xulgui Class Reference}
+\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui}\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+Inheritance diagram for app::xulgui::xulgui::Xulgui:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classapp_1_1xulgui_1_1xulgui_1_1Xulgui__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for app::xulgui::xulgui::Xulgui:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=400pt]{classapp_1_1xulgui_1_1xulgui_1_1Xulgui__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+def {\bf \_\-\_\-init\_\-\_\-}
+\item 
+def {\bf createPop}
+\item 
+def {\bf fitness}
+\item 
+def {\bf draw}
+\item 
+def {\bf report}
+\item 
+def {\bf test}
+\item 
+def {\bf close}
+\item 
+def {\bf decode}
+\item 
+def {\bf paramSpace}
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf geneLen}
+\item 
+{\bf bits}
+\item 
+{\bf fout}
+\item 
+{\bf uiWidgets}
+\item 
+{\bf maxDist}
+\item 
+{\bf objMax}
+\item 
+{\bf objMin}
+\item 
+{\bf objScaleMax}
+\item 
+{\bf objScaleMin}
+\item 
+{\bf gridSize}
+\item 
+{\bf subjMax}
+\item 
+{\bf subjMin}
+\item 
+{\bf subjScaleMax}
+\item 
+{\bf subjScaleMin}
+\item 
+{\bf ELEMENT\_\-NODE}
+\item 
+{\bf gridLen}
+\item 
+{\bf widgetNum}
+\item 
+{\bf elementNodes}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file xulgui.py.
+
+\subsection{Member Function Documentation}
+\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!__init__@{\_\-\_\-init\_\-\_\-}}
+\index{__init__@{\_\-\_\-init\_\-\_\-}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::\_\-\_\-init\_\-\_\- ( {\em self},  {\em params},  {\em random})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_a91d2ea541ff6080600a22fd8cabdd3f}
+
+
+
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_a99bf0fb9946c256ad79aa857d3778ef}.
+
+Definition at line 19 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!createPop@{createPop}}
+\index{createPop@{createPop}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::createPop ( {\em self},  {\em popsize})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_94b2d06454f68ef60e48ac1429385708}
+
+
+
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_f5fdccef71b1b0dcc961be5441ee46fe}.
+
+Definition at line 44 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!fitness@{fitness}}
+\index{fitness@{fitness}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::fitness ( {\em self},  {\em ind},  {\em user\_\-feedback})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_3a21862aea4e70ec703e9fb71336aa78}
+
+
+
+
+\footnotesize\begin{verbatim}
+Compute fitness.
+user_feedback is [best,worst]
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_fdaf1047955ec9e9e7ebca6cadd99ad7}.
+
+Definition at line 123 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!draw@{draw}}
+\index{draw@{draw}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::draw ( {\em self},  {\em parentPanel},  {\em subset})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_a55a599a909c9bdfb34754adf1967530}
+
+
+
+
+\footnotesize\begin{verbatim}
+Return a list of panels to be displayed to the user for evaluation.
+Use the arg parentPanel as the parent for each of the panels created.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_0c9aa98679040c294dc8f0136dee3d35}.
+
+Definition at line 190 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!report@{report}}
+\index{report@{report}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::report ( {\em self},  {\em pop},  {\em gen})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_1d519d35509181411f0f6b0515b861a1}
+
+
+
+
+\footnotesize\begin{verbatim}
+Write to console or file
+population statistics.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_96af711c993591e0879e01ba1412a415}.
+
+Definition at line 205 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!test@{test}}
+\index{test@{test}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::test ( {\em self},  {\em pop})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_560be00343c599aba242fc0a5bd4e529}
+
+
+
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_f47b8430213043fb65c9dab5d91a3b9e}.
+
+Definition at line 250 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!close@{close}}
+\index{close@{close}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::close ( {\em self})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_228806b248f2189a9e05e283cb0e8e57}
+
+
+
+
+Definition at line 258 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!decode@{decode}}
+\index{decode@{decode}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::decode ( {\em self},  {\em chromosome})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_14bc023abbb187d556990b8198460b20}
+
+
+
+
+\footnotesize\begin{verbatim}
+Decodes the chromosome from binary to decimals or floats, or whatever it may be.
+\end{verbatim}
+\normalsize
+ 
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_033677103afd5ebb19ccaefdf181033d}.
+
+Definition at line 262 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!paramSpace@{paramSpace}}
+\index{paramSpace@{paramSpace}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}def app::xulgui::xulgui::Xulgui::paramSpace ( {\em self},  {\em pop},  {\em user\_\-selected})}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_27644dd2b08e145fd3b0608ba4b8fc7b}
+
+
+
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_fc0f18765741627358a3f4a814652cf5}.
+
+Definition at line 280 of file xulgui.py.
+
+\subsection{Member Data Documentation}
+\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!geneLen@{geneLen}}
+\index{geneLen@{geneLen}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::geneLen}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_5d7367dc13fecf98cb0459e5f909429b}
+
+
+
+
+Reimplemented from {\bf app::app::Application} \doxyref{}{p.}{classapp_1_1app_1_1Application_85324e1c7283fe857ad9234bc970400b}.
+
+Definition at line 21 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!bits@{bits}}
+\index{bits@{bits}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::bits}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_ad4a8b0297cf5f1f57e6347c3c3102ef}
+
+
+
+
+Definition at line 22 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!fout@{fout}}
+\index{fout@{fout}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::fout}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_c002e3ed1c98b33809c6ca9486e8f385}
+
+
+
+
+Definition at line 28 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!uiWidgets@{uiWidgets}}
+\index{uiWidgets@{uiWidgets}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::uiWidgets}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_2f82c5d1bed8df5ea546be6acc61da34}
+
+
+
+
+Definition at line 30 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!maxDist@{maxDist}}
+\index{maxDist@{maxDist}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::maxDist}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_b1f6b21132c6d985f395a79cae13b05a}
+
+
+
+
+Definition at line 31 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!objMax@{objMax}}
+\index{objMax@{objMax}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::objMax}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_28aef3cde09ff8710319ffe9ac1e1468}
+
+
+
+
+Definition at line 32 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!objMin@{objMin}}
+\index{objMin@{objMin}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::objMin}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_ad7c0c89541d60aa898db2c7051429c4}
+
+
+
+
+Definition at line 33 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!objScaleMax@{objScaleMax}}
+\index{objScaleMax@{objScaleMax}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::objScaleMax}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_c3ba51ea23ba5d0fcee8399ab35060be}
+
+
+
+
+Definition at line 34 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!objScaleMin@{objScaleMin}}
+\index{objScaleMin@{objScaleMin}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::objScaleMin}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_69e541320943c6cf0472612d7d587da1}
+
+
+
+
+Definition at line 35 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!gridSize@{gridSize}}
+\index{gridSize@{gridSize}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::gridSize}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_d5321c7ff95c81786bd267a7086e23dd}
+
+
+
+
+Definition at line 36 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!subjMax@{subjMax}}
+\index{subjMax@{subjMax}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::subjMax}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_24c916215085ba484c498870b081d1d1}
+
+
+
+
+Definition at line 37 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!subjMin@{subjMin}}
+\index{subjMin@{subjMin}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::subjMin}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_94c8b591a0cc8ef9f6204221ff874ed3}
+
+
+
+
+Definition at line 38 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!subjScaleMax@{subjScaleMax}}
+\index{subjScaleMax@{subjScaleMax}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::subjScaleMax}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_d8237ca38a46fdc34d0ee86c68539d09}
+
+
+
+
+Definition at line 39 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!subjScaleMin@{subjScaleMin}}
+\index{subjScaleMin@{subjScaleMin}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::subjScaleMin}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_d7d538ae57c3c306c1ca029867d37703}
+
+
+
+
+Definition at line 40 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!ELEMENT_NODE@{ELEMENT\_\-NODE}}
+\index{ELEMENT_NODE@{ELEMENT\_\-NODE}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::ELEMENT\_\-NODE}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_83492fbcff33693a019df7d5ba8252aa}
+
+
+
+
+Definition at line 54 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!gridLen@{gridLen}}
+\index{gridLen@{gridLen}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::gridLen}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_37d55f2a9de6cc0d63ad30c9233c5fbf}
+
+
+
+
+Definition at line 100 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!widgetNum@{widgetNum}}
+\index{widgetNum@{widgetNum}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::widgetNum}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_68ee611549a806e77715c8bc58e3381c}
+
+
+
+
+Definition at line 111 of file xulgui.py.\index{app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}!elementNodes@{elementNodes}}
+\index{elementNodes@{elementNodes}!app::xulgui::xulgui::Xulgui@{app::xulgui::xulgui::Xulgui}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf app::xulgui::xulgui::Xulgui::elementNodes}}\label{classapp_1_1xulgui_1_1xulgui_1_1Xulgui_77105e444bd8a7ebe8d260e0a79ab2ef}
+
+
+
+
+Definition at line 112 of file xulgui.py.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/home/juan/xul\_\-ga/igap/app/xulgui/{\bf xulgui.py}\end{CompactItemize}

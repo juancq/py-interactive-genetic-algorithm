@@ -1,0 +1,78 @@
+inherits: [iga.yml]
+peers: ['abra.cse.unr.edu']
+numgen: 50
+stepSize: 1
+population:
+  type: nsga_ii
+  size: 100
+  selection: crowded_tournament
+  combinepop: front_elitist
+  subset:
+    type: evenfront
+    size: 9
+crossover:
+  type: mixed
+  prob: 0.8 
+  points: 1
+mutation:
+  type: mixed
+  prob: 0.01
+
+application:
+  name: xulgui
+  bits: 24
+  weight1: 0.5
+  weight2: 0.5
+
+  objScaleMax: 1000.0
+  objScaleMin: 0.0
+  subjScaleMax: 1000.0
+  subjScaleMin: 0.0
+  folder: data/
+  output: output
+  ui_file: moveto2.panel
+  width: 360
+  height: 260
+  rows: 10
+  cols: 2
+  compare: both
+
+  feedback: [Best]
+
+  vars:
+    widget_red: 
+        max: 255
+        min: 0
+        scale: 1.
+    widget_green: 
+        max: 255
+        min: 0
+        scale: 1.
+    widget_blue: 
+        max: 255
+        min: 0
+        scale: 1.
+    window_red: 
+        max: 255
+        min: 0
+        scale: 1.
+    window_green: 
+        max: 255
+        min: 0
+        scale: 1.
+    window_blue: 
+        max: 255
+        min: 0
+        scale: 1.
+    vgap:
+        max: 15
+        min: 0
+        scale: 1
+    hgap:
+        max: 15
+        min: 0
+        scale: 1
+    font_face:
+        max: 63
+        min: 0
+        scale: 1
