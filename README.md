@@ -1,5 +1,6 @@
 # Python Interactive Genetic Algorithm
 
+![IGAP](https://raw.githubusercontent.com/wiki/juancq/py-interactive-genetic-algorithm/images/individual_iga.gif)
 
 ## References
 
