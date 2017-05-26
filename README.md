@@ -1,6 +1,13 @@
 # Python Interactive Genetic Algorithm
 
-![IGAP](https://raw.githubusercontent.com/wiki/juancq/py-interactive-genetic-algorithm/images/individual_iga.gif)
+Interactive Genetic Algorithm
+
+![IGA](https://raw.githubusercontent.com/wiki/juancq/py-interactive-genetic-algorithm/images/individual_iga.gif)
+
+Collaborative Peer-to-Peer IGA
+
+![Collaborative IGA](https://raw.githubusercontent.com/wiki/juancq/py-interactive-genetic-algorithm/images/collaborative_iga.gif)
+
 
 ## References
 
